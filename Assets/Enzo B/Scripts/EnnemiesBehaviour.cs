@@ -13,6 +13,7 @@ public class EnnemiesBehaviour : MonoBehaviour
     public float attackRange;
     public float attackBuffer;
     private float _attackCooldown;
+    private int _health = 2;
 
     private void Awake()
     {
@@ -71,6 +72,13 @@ public class EnnemiesBehaviour : MonoBehaviour
             Debug.Log("Enemies Attack " + player.name + "!");
             _attackCooldown = 0f;
         }
+    }
+
+    public void GetHurt()
+    {
+        _health--;
+        if (_health <= 0)
+            Destroy(gameObject);
     }
 
     private void OnDestroy()
