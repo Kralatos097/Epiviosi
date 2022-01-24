@@ -9,10 +9,12 @@ public class EnnemiesBehaviour : MonoBehaviour
     public NavMeshAgent agent;
     public float speed;
     private Vector3 _playerDestination;
+    public static List<EnnemiesBehaviour> EnnemiesList = new List<EnnemiesBehaviour>();
 
     private void Awake()
     {
         if (agent == null) agent = GetComponent<NavMeshAgent>();
+        EnnemiesList.Add(this);
     }
 
     // Start is called before the first frame update
@@ -48,5 +50,10 @@ public class EnnemiesBehaviour : MonoBehaviour
         }
 
         agent.destination = _playerDestination;
+    }
+
+    private void OnDestroy()
+    {
+        EnnemiesList.Remove(this);
     }
 }
