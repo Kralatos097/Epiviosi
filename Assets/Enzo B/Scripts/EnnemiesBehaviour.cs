@@ -14,19 +14,13 @@ public class EnnemiesBehaviour : MonoBehaviour
     public float attackRange;
     public float attackBuffer;
     private float _attackCooldown;
-    private int _health = 2;
+    public int health = 2;
 
     private void Awake()
     {
         if (agent == null) agent = GetComponent<NavMeshAgent>();
         EnnemiesList.Add(this);
         agent.speed = speed;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -99,8 +93,8 @@ public class EnnemiesBehaviour : MonoBehaviour
 
     public void GetHurt()
     {
-        _health--;
-        if (_health <= 0)
+        health--;
+        if (health <= 0)
             Destroy(gameObject);
     }
 
