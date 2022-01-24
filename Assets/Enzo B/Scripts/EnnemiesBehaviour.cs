@@ -61,6 +61,8 @@ public class EnnemiesBehaviour : MonoBehaviour
         else
         {
             agent.destination = transform.position;
+            transform.forward = _playerAimed.transform.position - transform.position;
+            transform.forward = new Vector3(transform.forward.x, 0f, transform.forward.z);
             AttackPlayer(_playerAimed);
         }
     }
