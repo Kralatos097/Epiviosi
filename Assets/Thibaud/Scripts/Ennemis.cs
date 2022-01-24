@@ -8,6 +8,8 @@ public class Ennemis : MonoBehaviour
 
     private void Awake()
     {
+        if (EnnemisList == null) EnnemisList = new List<Ennemis>();
+
         EnnemisList.Add(this);
     }
 
