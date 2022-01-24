@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 {
     private Vector2 movement;
     public float speed = 3f;
+    public float maxHP;
 
     private void Update()
     {
