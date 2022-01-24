@@ -10,6 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Thibaud/Scenes/Player.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="248hpMFXkg6UHld88gxbXWRlPPN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643018305553</updated>
-      <workItem from="1643018334256" duration="1587000" />
+      <workItem from="1643018334256" duration="2233000" />
     </task>
     <servers />
   </component>
