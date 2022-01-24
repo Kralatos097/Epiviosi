@@ -60,15 +60,15 @@ public class EnnemiesBehaviour : MonoBehaviour
         else
         {
             agent.destination = transform.position;
-            AttackPlayer();
+            AttackPlayer(_playerAimed);
         }
     }
 
-    void AttackPlayer()
+    void AttackPlayer(GameObject player)
     {
         if (_attackCooldown >= attackBuffer)
         {
-            Debug.Log("Enemies Attack " + _playerAimed.name + "!");
+            Debug.Log("Enemies Attack " + player.name + "!");
             _attackCooldown = 0f;
         }
     }
