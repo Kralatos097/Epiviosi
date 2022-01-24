@@ -9,6 +9,7 @@ public class EnnemiesBehaviour : MonoBehaviour
     public NavMeshAgent agent;
     public float speed = 3.5f;
     private GameObject _playerAimed;
+    public float changePlayerFactor = 1.5f;
     public static List<EnnemiesBehaviour> EnnemiesList = new List<EnnemiesBehaviour>();
     public float attackRange;
     public float attackBuffer;
@@ -32,24 +33,44 @@ public class EnnemiesBehaviour : MonoBehaviour
     void Update()
     {
         _attackCooldown += Time.deltaTime;
+
+        float distance = float.MaxValue;
+        if (_playerAimed != null)
+        {
+            int index = 0;
+            foreach (Vector3 corner in agent.path.corners)
+            {
+                distance += Vector3.Distance(corner, index == 0 ? transform.position : agent.path.corners[index - 1]);
+                index++;
+            }
+        }
         
-        float distance = Single.MaxValue;
         foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
         {
             NavMeshPath path = new NavMeshPath();
             float newPlayerDistance = 0f;
             agent.CalculatePath(player.transform.position, path);
-            int index = 0;
-            //Calculate path lenght
-            foreach (Vector3 corner in path.corners)
+            Debug.Log(path.status + " for " + player.name);
+            
+            //Check if it's reachable
+            if (path.status == NavMeshPathStatus.PathComplete)
             {
-                newPlayerDistance += Vector3.Distance(corner, index == 0 ? transform.position : path.corners[index - 1]);
-                //No need to go further if the distance is already bigger
-                if (newPlayerDistance >= distance)
-                    break;
-                index++;
+                //Calculate path lenght
+                int index = 0;
+                foreach (Vector3 corner in path.corners)
+                {
+                    newPlayerDistance += Vector3.Distance(corner, index == 0 ? transform.position : path.corners[index - 1]);
+                    //No need to go further if the distance is already bigger
+                    if (newPlayerDistance * changePlayerFactor >= distance)
+                        break;
+                    index++;
+                }
             }
-            if (newPlayerDistance <= distance)
+            else
+            {
+                newPlayerDistance = float.MaxValue;
+            }
+            if (newPlayerDistance * changePlayerFactor <= distance)
             {
                 _playerAimed = player;
                 distance = newPlayerDistance;
