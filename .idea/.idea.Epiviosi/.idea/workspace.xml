@@ -21,6 +21,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="248dFTy4Pw0B6m58YBFHzzgCnk1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
