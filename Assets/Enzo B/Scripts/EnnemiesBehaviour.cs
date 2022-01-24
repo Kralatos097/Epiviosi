@@ -7,14 +7,18 @@ using UnityEngine.AI;
 public class EnnemiesBehaviour : MonoBehaviour
 {
     public NavMeshAgent agent;
-    public float speed;
-    private Vector3 _playerDestination;
+    public float speed = 3.5f;
+    private GameObject _playerAimed;
     public static List<EnnemiesBehaviour> EnnemiesList = new List<EnnemiesBehaviour>();
+    public float attackRange;
+    public float attackBuffer;
+    private float _attackCooldown;
 
     private void Awake()
     {
         if (agent == null) agent = GetComponent<NavMeshAgent>();
         EnnemiesList.Add(this);
+        agent.speed = speed;
     }
 
     // Start is called before the first frame update
@@ -26,6 +30,8 @@ public class EnnemiesBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _attackCooldown += Time.deltaTime;
+        
         float distance = Single.MaxValue;
         foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
         {
@@ -44,12 +50,27 @@ public class EnnemiesBehaviour : MonoBehaviour
             }
             if (newPlayerDistance <= distance)
             {
-                _playerDestination = player.transform.position;
+                _playerAimed = player;
+                distance = newPlayerDistance;
             }
-
         }
 
-        agent.destination = _playerDestination;
+        if (Vector3.Distance(_playerAimed.transform.position, transform.position) >= attackRange)
+            agent.destination = _playerAimed.transform.position;
+        else
+        {
+            agent.destination = transform.position;
+            AttackPlayer();
+        }
+    }
+
+    void AttackPlayer()
+    {
+        if (_attackCooldown >= attackBuffer)
+        {
+            Debug.Log("Enemies Attack " + _playerAimed.name + "!");
+            _attackCooldown = 0f;
+        }
     }
 
     private void OnDestroy()
