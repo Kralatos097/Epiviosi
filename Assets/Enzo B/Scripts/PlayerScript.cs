@@ -4,14 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public abstract class Player : MonoBehaviour
+public abstract class PlayerScript : MonoBehaviour
 {
     public CharacterController controller;
     public float maxHp;
     public float speed = 3f;
     protected Vector2 Movement;
     protected Vector2 ValueCheck;
-    
+    public static List<PlayerScript> PlayerList = new List<PlayerScript>();
+
 
     public void Move(Vector2 movement, float speed)
     {

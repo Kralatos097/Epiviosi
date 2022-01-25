@@ -89,7 +89,7 @@ public class VagueManagerScript : MonoBehaviour
     //Soigne tous les joueur en fin de manche
     private void PlayerFullHeal()
     {
-        foreach (Player player in Player.PlayerList)
+        foreach (PlayerScript player in PlayerScript.PlayerList)
         {
             //regen full vie
         }
@@ -98,12 +98,12 @@ public class VagueManagerScript : MonoBehaviour
     //return true si tous les joueur sont morts est finit, false snn
     private bool CheckPlayerAlive()
     {
-        foreach (Player player in Player.PlayerList)
+        foreach (PlayerScript player in PlayerScript.PlayerList)
         {
-            if(!player.isDead)
+            /*if(!player.isDead)
             {
                 return false;
-            }
+            }*/
         }
 
         return true;
