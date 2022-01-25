@@ -44,8 +44,7 @@ public class EnnemiesBehaviour : MonoBehaviour
             NavMeshPath path = new NavMeshPath();
             float newPlayerDistance = 0f;
             agent.CalculatePath(player.transform.position, path);
-            Debug.Log(path.status + " for " + player.name);
-            
+
             //Check if it's reachable
             if (path.status == NavMeshPathStatus.PathComplete)
             {
@@ -86,7 +85,6 @@ public class EnnemiesBehaviour : MonoBehaviour
     {
         if (_attackCooldown >= attackBuffer)
         {
-            Debug.Log("Enemies Attack " + player.name + "!");
             _attackCooldown = 0f;
         }
     }
