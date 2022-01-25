@@ -277,6 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 274101089}
   maxHP: 3
+  speed: 3
   typhoonPrefab: {fileID: 8405339698793381188, guid: ccd80c5cc13ef0041a043f08487f8dbd, type: 3}
 --- !u!143 &274101089
 CharacterController:

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4089036823769377074}
   - component: {fileID: 7125727984989963165}
   - component: {fileID: -6039854276310861736}
+  - component: {fileID: 1635540479012957351}
   m_Layer: 0
   m_Name: Siphon
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8405339698793381188}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.3, z: 0}
-  m_LocalScale: {x: 70, y: 70, z: 70}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 52ff03c9fbf446940a237a528ac1af18, type: 3}
   m_Color: {r: 0, g: 0.9612422, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,8 +97,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.09
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 7.072222
+  m_Center: {x: 0, y: 0.3223586, z: 1.0282785e-15}
 --- !u!114 &7125727984989963165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,3 +127,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!111 &1635540479012957351
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8405339698793381188}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 8da0a222cbde45e43b690bd98a512fea, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 8da0a222cbde45e43b690bd98a512fea, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
