@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Poseidon : PlayerScript
+public class Zeus : PlayerScript
 {
-    public GameObject typhoonPrefab;
+    public GameObject thunderPrefab;
 
-    public float coolDown = 25f;
+    public float coolDown = 20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +37,7 @@ public class Poseidon : PlayerScript
     public override void OnSpecial()
     {
         if (!SpecialActive) return;
-        Instantiate(typhoonPrefab,  transform.position + (transform.forward * 10), Quaternion.Euler(90, 0, 0));
+        Instantiate(thunderPrefab,  transform.position + (transform.forward * 10), Quaternion.Euler(90, 0, 0));
         ActivateSpecial(false);
         Timer = 0f;
     }
