@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class Zeus : PlayerScript
 {
     public GameObject thunderPrefab;
+
+    public float coolDown = 20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,11 @@ public class Zeus : PlayerScript
     // Update is called once per frame
     void Update()
     {
+        Timer += Time.deltaTime;
+        if (Timer >= coolDown)
+        {
+            ActivateSpecial(true);
+        }
         Move(Movement, speed);
     }
 
@@ -29,6 +36,9 @@ public class Zeus : PlayerScript
 
     public override void OnSpecial()
     {
+        if (!SpecialActive) return;
         Instantiate(thunderPrefab,  transform.position + (transform.forward * 10), Quaternion.Euler(90, 0, 0));
+        ActivateSpecial(false);
+        Timer = 0f;
     }
 }

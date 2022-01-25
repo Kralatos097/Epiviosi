@@ -12,6 +12,8 @@ public abstract class PlayerScript : MonoBehaviour
     protected Vector2 Movement;
     protected Vector2 ValueCheck;
     public static List<PlayerScript> PlayerList = new List<PlayerScript>();
+    protected float Timer;
+    protected bool SpecialActive;
 
 
     public void Move(Vector2 movement, float speed)
@@ -28,4 +30,9 @@ public abstract class PlayerScript : MonoBehaviour
     public abstract void OnMovement(InputValue value);
 
     public abstract void OnSpecial();
+
+    public void ActivateSpecial(bool newState)
+    {
+        SpecialActive = newState;
+    }
 }
