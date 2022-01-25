@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4624d00a-3574-4aef-af4f-6aea0869e2ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Epiviosi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Epiviosi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="4624d00a-3574-4aef-af4f-6aea0869e2ce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +36,7 @@
       <workItem from="1643016436215" duration="374000" />
       <workItem from="1643028896240" duration="5583000" />
       <workItem from="1643103541632" duration="74000" />
-      <workItem from="1643103662765" duration="1212000" />
+      <workItem from="1643103662765" duration="2097000" />
     </task>
     <servers />
   </component>
