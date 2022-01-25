@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Poseidon : Player
+public class Poseidon : PlayerScript
 {
     public GameObject typhoonPrefab;
     // Start is called before the first frame update
