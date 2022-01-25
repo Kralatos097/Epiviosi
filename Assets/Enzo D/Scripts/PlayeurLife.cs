@@ -37,7 +37,7 @@ public class PlayeurLife : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(CapsuleCollider collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
@@ -45,7 +45,7 @@ public class PlayeurLife : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(CapsuleCollider collision)
+    private void OnTriggerExit(Collider collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
