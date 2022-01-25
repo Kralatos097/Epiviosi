@@ -7,9 +7,11 @@ using UnityEngine.InputSystem;
 public abstract class Player : MonoBehaviour
 {
     public CharacterController controller;
-    public float maxHP;
+    public float maxHp;
     public float speed = 3f;
-    protected Vector2 movement;
+    protected Vector2 Movement;
+    protected Vector2 ValueCheck;
+    
 
     public void Move(Vector2 movement, float speed)
     {

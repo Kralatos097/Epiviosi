@@ -15,12 +15,16 @@ public class Poseidon : Player
     // Update is called once per frame
     void Update()
     {
-        Move(movement, speed);
+        Move(Movement, speed);
     }
 
     public override void OnMovement(InputValue value)
     {
-        movement = value.Get<Vector2>() * Time.deltaTime * speed;
+        ValueCheck = value.Get<Vector2>();
+        if (ValueCheck.x < 0.5f && ValueCheck.x > -0.5f && ValueCheck.y < 0.5 && ValueCheck.y > -0.5f)
+            Movement = Vector2.zero;
+        else
+            Movement = value.Get<Vector2>() * Time.deltaTime * speed;
     }
 
     public override void OnSpecial()
