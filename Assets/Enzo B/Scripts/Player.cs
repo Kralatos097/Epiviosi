@@ -4,15 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour
+public abstract class Player : MonoBehaviour
 {
-    private Vector2 movement;
-    public float speed = 3f;
+    public CharacterController controller;
     public float maxHP;
 
-    private void Update()
+    public void Move(Vector2 movement, float speed)
     {
-        transform.position += new Vector3(movement.x, 0f, movement.y);
+        controller.Move(new Vector3(movement.x, 0f, movement.y) * speed);
+        transform.LookAt(transform.position + new Vector3(movement.x, 0f, movement.y));
     }
 
     public void OnAttack()
@@ -20,13 +20,7 @@ public class Player : MonoBehaviour
         Debug.Log("Attack");
     }
 
-    public void OnMovement(InputValue value)
-    {
-        movement = value.Get<Vector2>() * Time.deltaTime * speed;
-    }
+    public abstract void OnMovement(InputValue value);
 
-    public void OnSpecial()
-    {
-        Debug.Log("Special");
-    }
+    public abstract void OnSpecial();
 }
