@@ -23,6 +23,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/TyphoonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Poseidon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="248dFTy4Pw0B6m58YBFHzzgCnk1" />
@@ -75,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643016046717</updated>
       <workItem from="1643016066831" duration="10206000" />
-      <workItem from="1643101167034" duration="1064000" />
+      <workItem from="1643101167034" duration="2052000" />
     </task>
     <servers />
   </component>

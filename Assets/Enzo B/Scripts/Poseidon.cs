@@ -7,6 +7,8 @@ public class Poseidon : Player
 {
     private Vector2 movement;
     private float speed = 3f;
+
+    public GameObject typhoonPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,6 @@ public class Poseidon : Player
 
     public override void OnSpecial()
     {
-        Debug.Log("Special");
+        Instantiate(typhoonPrefab,  transform.position + (transform.forward * 10), Quaternion.Euler(90, 0, 0));
     }
 }

@@ -277,6 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 274101089}
   maxHP: 3
+  typhoonPrefab: {fileID: 8405339698793381188, guid: ccd80c5cc13ef0041a043f08487f8dbd, type: 3}
 --- !u!143 &274101089
 CharacterController:
   m_ObjectHideFlags: 0
@@ -465,7 +466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810011281}
   m_LocalRotation: {x: 0.29504108, y: 0, z: 0, w: 0.95548457}
-  m_LocalPosition: {x: 0, y: 10.95, z: -15.27}
+  m_LocalPosition: {x: 0, y: 18.13, z: -22.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
