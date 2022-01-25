@@ -8,6 +8,8 @@ public abstract class Player : MonoBehaviour
 {
     public CharacterController controller;
     public float maxHP;
+    public float speed = 3f;
+    protected Vector2 movement;
 
     public void Move(Vector2 movement, float speed)
     {

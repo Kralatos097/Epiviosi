@@ -5,9 +5,6 @@ using UnityEngine.InputSystem;
 
 public class Poseidon : Player
 {
-    private Vector2 movement;
-    private float speed = 3f;
-
     public GameObject typhoonPrefab;
     // Start is called before the first frame update
     void Start()

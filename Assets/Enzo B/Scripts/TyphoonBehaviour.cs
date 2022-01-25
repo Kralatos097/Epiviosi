@@ -17,6 +17,9 @@ public class TyphoonBehaviour : MonoBehaviour
             {
                 ennemieAgent.updateRotation = false;
                 ennemieAgent.destination = transform.position;
+                NavMeshHit hit;
+                bool aviable = ennemieAgent.Raycast(transform.position, out hit);
+                Debug.DrawLine(transform.position, ennemieAgent.transform.position, aviable ? Color.green : Color.red);
                 ennemieAgent.speed = 2;
             }
 
