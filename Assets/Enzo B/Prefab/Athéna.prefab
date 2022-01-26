@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4704703885030000132
+--- !u!1 &5274924816840289571
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4704703885030000133}
-  - component: {fileID: 4704703885030000128}
-  - component: {fileID: 4704703885030000131}
-  - component: {fileID: 4704703885030000130}
-  - component: {fileID: 4704703885030000129}
-  - component: {fileID: 4704703885030000190}
-  - component: {fileID: 4704703885030000191}
+  - component: {fileID: 5274924816840289568}
+  - component: {fileID: 5274924816840289583}
+  - component: {fileID: 5274924816840289582}
+  - component: {fileID: 5274924816840289569}
+  - component: {fileID: 5274924816840289580}
+  - component: {fileID: 5274924816840289570}
+  - component: {fileID: 5274924816840289578}
   m_Layer: 0
-  m_Name: Poseidon
+  m_Name: "Ath\xE9na"
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4704703885030000133
+--- !u!4 &5274924816840289568
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4704703885030000132}
+  m_GameObject: {fileID: 5274924816840289571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.08, y: 0.5, z: 0}
+  m_LocalPosition: {x: -2.22, y: 0.5, z: 4.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4704703885030000128
+--- !u!33 &5274924816840289583
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4704703885030000132}
+  m_GameObject: {fileID: 5274924816840289571}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &4704703885030000131
+--- !u!23 &5274924816840289582
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4704703885030000132}
+  m_GameObject: {fileID: 5274924816840289571}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -85,26 +85,63 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4704703885030000130
+--- !u!65 &5274924816840289569
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4704703885030000132}
+  m_GameObject: {fileID: 5274924816840289571}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4704703885030000129
+--- !u!143 &5274924816840289580
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5274924816840289571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5274924816840289570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4704703885030000132}
+  m_GameObject: {fileID: 5274924816840289571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f26cdd81e4eca469210ae24c532fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 5274924816840289580}
+  maxHp: 3
+  speed: 3
+  coolDown: 10
+  ShieldActive: 0
+  shieldPrefab: {fileID: 8516058633305801313, guid: 3267f70bd7e66cd45ac7f556038a6794, type: 3}
+  shieldRange: 10
+--- !u!114 &5274924816840289578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5274924816840289571}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
@@ -122,57 +159,9 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: dd0e5fd4-5de0-4100-9ae9-26f6eeda5630
-    m_ActionName: InGame/Movement[/XInputControllerWindows/leftStick]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 725b5c7a-eb1d-4398-84e1-1b173421ed15
-    m_ActionName: InGame/Attack[/XInputControllerWindows/buttonSouth]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e4a8c99d-c4ce-4d62-a56e-4a09a83b6a30
-    m_ActionName: InGame/Special[/XInputControllerWindows/buttonEast]
-  m_NeverAutoSwitchControlSchemes: 0
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: "Ar\xE8ne"
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &4704703885030000190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4704703885030000132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6492483585fc06747862d70b8f545b09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 4704703885030000191}
-  maxHp: 4
-  speed: 3
-  coolDown: 25
-  ShieldActive: 0
-  typhoonPrefab: {fileID: 8405339698793381188, guid: ccd80c5cc13ef0041a043f08487f8dbd, type: 3}
---- !u!143 &4704703885030000191
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4704703885030000132}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4624d00a-3574-4aef-af4f-6aea0869e2ce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +14,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SwitchPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurLife.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/ShieldBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="248e1egIv2OR5hl6qd1AExmwNjk" />
   <component name="ProjectViewState">
@@ -23,6 +29,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -58,6 +68,7 @@
       <workItem from="1643016436215" duration="374000" />
       <workItem from="1643028896240" duration="5583000" />
       <workItem from="1643102708293" duration="642000" />
+      <workItem from="1643186564644" duration="10070000" />
     </task>
     <servers />
   </component>
