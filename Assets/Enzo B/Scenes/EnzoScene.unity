@@ -566,7 +566,7 @@ MonoBehaviour:
         m_Action: Join
         m_Flags: 0
     m_Reference: {fileID: 0}
-  m_PlayerPrefab: {fileID: 4704703885030000132, guid: 876dd8554317596478d4e5a7d28f9fe0, type: 3}
+  m_PlayerPrefab: {fileID: 5357814750509228706, guid: 48c8b7818c61c194d8113cc2be21e328, type: 3}
   m_SplitScreen: 0
   m_MaintainAspectRatioInSplitScreen: 0
   m_FixedNumberOfSplitScreens: -1
@@ -589,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefabList:
+  - {fileID: 5357814750509228706, guid: 48c8b7818c61c194d8113cc2be21e328, type: 3}
   - {fileID: 4704703885030000132, guid: 876dd8554317596478d4e5a7d28f9fe0, type: 3}
   - {fileID: 5274924816840289571, guid: df6f9be8ad6a7294cadc1ccd733127d1, type: 3}
   InputManager: {fileID: 1233626595}
