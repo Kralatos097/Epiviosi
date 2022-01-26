@@ -15,6 +15,7 @@ public class EnnemiesBehaviour : MonoBehaviour
     public float attackBuffer;
     private float _attackCooldown;
     public int health = 2;
+    public bool cursed = false;
 
     private void Awake()
     {
@@ -104,6 +105,8 @@ public class EnnemiesBehaviour : MonoBehaviour
         health -= healthLost;
         if (health <= 0)
             Destroy(gameObject);
+        if (cursed)
+            Destroy(transform.GetChild(0));
     }
 
     private void OnDestroy()
