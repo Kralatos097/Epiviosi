@@ -15,12 +15,17 @@ public class VagueManagerScript : MonoBehaviour
 
     public GameObject EnnA;
     public GameObject EnnB;
+
+    public float TimeBetweenWave;
     
     //Private
-   public int _nbVague = 0;
+    public int _nbVague = 0;
+    private float _waveTimer = 0;
     
     void Start()
     {
+        _waveTimer = TimeBetweenWave;
+        
         NewVague();
     }
     
@@ -30,15 +35,26 @@ public class VagueManagerScript : MonoBehaviour
         if (CheckPlayerAlive()) Defaite();
         if (CheckEnnemiAlive())
             if (_nbVague >= NbVagueFinale) Victoire();
-            else NewVague();
+            else
+            {
+                if (_waveTimer <= 0)
+                {
+                    NewVague();
+                    _waveTimer = TimeBetweenWave;
+                }
+                else _waveTimer -= Time.deltaTime;
+            }
     }
 
     //Lance une nouvelle manche
-    public void NewVague()
+    private void NewVague()
     {
         _nbVague++;
+                
         PlayerFullHeal();
         EnnemisSpawn();
+        
+        //reactivate objects spawn
     }
 
     //Lance la victoire si toutes les manches sont réussie
