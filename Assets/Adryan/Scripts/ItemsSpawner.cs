@@ -7,29 +7,52 @@ public class ItemsSpawner : MonoBehaviour
 {
 
     public GameObject[] Items = new GameObject[5];
+    public List<GameObject> SpawnedItems = new List<GameObject>();
+
+    public bool InWave = true;
 
     public int MaxItemOnTerrain;
     public float TimeBeforeSpawn;
     public int Radius;
+    public GameObject ItemsDetector;
 
-    private int _itemsCount;
+    private bool isSpawning = false;
 
-    void Start()
+    private void Start()
     {
         StartCoroutine(SpawnItems());
+      
+    }
+
+    private void FixedUpdate()
+    {
+        if (InWave && !isSpawning)
+        {
+            Invoke("start", 1f);
+        }
     }
 
     IEnumerator SpawnItems()
     {
-        while (_itemsCount < MaxItemOnTerrain)
+        while (SpawnedItems.Count < MaxItemOnTerrain)
         {
-
-           Vector3 spherePos = Random.insideUnitSphere * Radius;
+            isSpawning = true;
+            Vector3 spherePos = Random.insideUnitSphere * Radius;
             Vector3 spawnPos = new Vector3(spherePos.x, 0, spherePos.z);
             transform.position = spawnPos;
-            Instantiate(Items[Random.Range(0, Items.Length)],transform.position, Quaternion.identity);
+            var item = Instantiate(Items[Random.Range(0, Items.Length)], transform.position, Quaternion.identity);
+            item.transform.parent = ItemsDetector.transform;
+            if (!SpawnedItems.Contains(item))
+            {
+                SpawnedItems.Add(item);
+            }
             yield return new WaitForSeconds(TimeBeforeSpawn);
-            _itemsCount += 1;
         }
+        if(SpawnedItems.Count == MaxItemOnTerrain) isSpawning = false;
+    }
+
+    public void RemoveItemFromList(GameObject item)
+    {
+        SpawnedItems.Remove(item);
     }
 }
