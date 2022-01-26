@@ -9,24 +9,25 @@ public class ItemsSpawner : MonoBehaviour
     public GameObject[] Items = new GameObject[5];
 
     public int MaxItemOnTerrain;
-    public int TimeBeforeSpawn;
+    public float TimeBeforeSpawn;
+    public int Radius;
 
-    private int xPos;
-    private int zPos;
     private int _itemsCount;
 
     void Start()
     {
-        StartCoroutine(SpawnItems()); 
+        StartCoroutine(SpawnItems());
     }
 
     IEnumerator SpawnItems()
     {
         while (_itemsCount < MaxItemOnTerrain)
         {
-            xPos = Random.Range(-20, 20);
-            zPos = Random.Range(-20, 20);
-            Instantiate(Items[Random.Range(0, Items.Length)], new Vector3(xPos, 0, zPos), Quaternion.identity);
+
+           Vector3 spherePos = Random.insideUnitSphere * Radius;
+            Vector3 spawnPos = new Vector3(spherePos.x, 0, spherePos.z);
+            transform.position = spawnPos;
+            Instantiate(Items[Random.Range(0, Items.Length)],transform.position, Quaternion.identity);
             yield return new WaitForSeconds(TimeBeforeSpawn);
             _itemsCount += 1;
         }
