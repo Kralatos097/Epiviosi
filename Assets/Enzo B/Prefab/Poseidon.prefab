@@ -135,7 +135,7 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: e4a8c99d-c4ce-4d62-a56e-4a09a83b6a30
     m_ActionName: InGame/Special[/XInputControllerWindows/buttonEast]
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: InGame
   m_SplitScreenIndex: -1
@@ -156,6 +156,7 @@ MonoBehaviour:
   maxHp: 4
   speed: 3
   coolDown: 25
+  ShieldActive: 0
   typhoonPrefab: {fileID: 8405339698793381188, guid: ccd80c5cc13ef0041a043f08487f8dbd, type: 3}
 --- !u!143 &4704703885030000191
 CharacterController:

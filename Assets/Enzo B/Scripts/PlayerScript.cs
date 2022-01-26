@@ -15,6 +15,7 @@ public abstract class PlayerScript : MonoBehaviour
     protected float Timer;
     protected bool SpecialActive;
     public float coolDown;
+    public bool ShieldActive = false;
 
     private void Awake()
     {

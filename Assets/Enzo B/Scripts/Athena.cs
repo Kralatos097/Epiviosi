@@ -39,7 +39,7 @@ public class Athena : PlayerScript
         if (!SpecialActive) return;
         foreach (PlayerScript player in PlayerList)
         {
-            if (Vector3.Distance(transform.position, player.transform.position) < shieldRange)
+            if (Vector3.Distance(transform.position, player.transform.position) < shieldRange && !player.ShieldActive)
                 Instantiate(shieldPrefab, player.transform);
         }
     }

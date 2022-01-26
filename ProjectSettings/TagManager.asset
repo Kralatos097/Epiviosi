@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Shield
+    uniqueID: 3235028515
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

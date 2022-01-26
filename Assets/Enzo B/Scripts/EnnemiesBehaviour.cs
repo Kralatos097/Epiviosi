@@ -69,6 +69,7 @@ public class EnnemiesBehaviour : MonoBehaviour
                 distance = newPlayerDistance;
             }
         }
+        if (!_playerAimed) return;
 
         if (Vector3.Distance(_playerAimed.transform.position, transform.position) >= attackRange)
             agent.destination = _playerAimed.transform.position;
@@ -85,13 +86,22 @@ public class EnnemiesBehaviour : MonoBehaviour
     {
         if (_attackCooldown >= attackBuffer)
         {
-            _attackCooldown = 0f;
+            if (player.GetComponent<PlayerScript>().ShieldActive)
+            {
+                Destroy(player.GetComponentInChildren<ShieldBehaviour>().gameObject);
+                _attackCooldown = 0f;
+            }
+            else
+            {
+                _attackCooldown = 0f;
+                //player.health--;
+            }
         }
     }
 
-    public void GetHurt()
+    public void GetHurt(int healthLost)
     {
-        health--;
+        health -= healthLost;
         if (health <= 0)
             Destroy(gameObject);
     }
