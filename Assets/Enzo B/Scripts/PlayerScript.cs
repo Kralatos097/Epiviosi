@@ -16,6 +16,7 @@ public abstract class PlayerScript : MonoBehaviour
     protected bool SpecialActive;
     public float coolDown;
     public bool ShieldActive = false;
+    public bool BuffActive = false;
 
     private void Awake()
     {
@@ -31,6 +32,7 @@ public abstract class PlayerScript : MonoBehaviour
     public void OnAttack()
     {
         Debug.Log("Attack");
+        BuffActive = false;
     }
 
     public abstract void OnMovement(InputValue value);
