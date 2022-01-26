@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Enzo B/Scripts/PlayerInput.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Enzo B/Scripts/PlayerInputTest.inputactions'
 
 using System;
 using System.Collections;
@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @PlayerInput : IInputActionCollection, IDisposable
+public class @PlayerInputTest : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @PlayerInput()
+    public @PlayerInputTest()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""name"": ""PlayerInput"",
+    ""name"": ""PlayerInputTest"",
     ""maps"": [
         {
             ""name"": ""InGame"",
@@ -169,8 +169,8 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     private readonly InputAction m_InGame_Special;
     public struct InGameActions
     {
-        private @PlayerInput m_Wrapper;
-        public InGameActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
+        private @PlayerInputTest m_Wrapper;
+        public InGameActions(@PlayerInputTest wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_InGame_Movement;
         public InputAction @Attack => m_Wrapper.m_InGame_Attack;
         public InputAction @Special => m_Wrapper.m_InGame_Special;

@@ -6,15 +6,15 @@
             "id": "fee5a664-4690-4880-a0e4-529ddbcddf20",
             "actions": [
                 {
-                    "name": "Mouvement",
+                    "name": "Movement",
                     "type": "Value",
                     "id": "50082c2a-72f9-41f2-9803-7f7c764aacc5",
-                    "expectedControlType": "Analog",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "AttaqueALaLance",
+                    "name": "Attack",
                     "type": "Button",
                     "id": "fd25891e-a5f8-4eab-801b-50ba79185b50",
                     "expectedControlType": "Button",
@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "AttaqueSpeciale",
+                    "name": "Special",
                     "type": "Button",
                     "id": "697b42b2-283c-426a-82c2-0575dd026837",
                     "expectedControlType": "Button",
@@ -41,23 +41,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "12448ad3-a992-488e-a230-4f77c312fb55",
-                    "path": "<Gamepad>/leftStick/y",
+                    "id": "5371cf13-f8b5-4ff5-9855-fba8f4b49fc4",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Mouvement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4ce0e2b8-ae50-43ad-8238-9e5a5b16f27c",
-                    "path": "<Gamepad>/leftStick/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Mouvement",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -68,7 +57,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AttaqueALaLance",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -79,7 +68,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AttaqueSpeciale",
+                    "action": "Special",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

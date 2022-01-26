@@ -29,7 +29,7 @@ public class PlayeurControlleur : MonoBehaviour
 
     private void Update()
     {
-        Vector2 mouvement = playeurControl.Arène.Mouvement.ReadValue<Vector2>();
+        Vector2 mouvement = playeurControl.Arène.Movement.ReadValue<Vector2>();
         Debug.Log(mouvement);
         
     }
