@@ -6,8 +6,6 @@ using UnityEngine.InputSystem;
 public class Poseidon : PlayerScript
 {
     public GameObject typhoonPrefab;
-
-    public float coolDown = 25f;
     // Start is called before the first frame update
     void Start()
     {

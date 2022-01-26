@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Zeus : PlayerScript
+public class Athena : PlayerScript
 {
-    public GameObject thunderPrefab;
+    public GameObject shieldPrefab;
+    public float shieldRange = 10f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,8 +37,10 @@ public class Zeus : PlayerScript
     public override void OnSpecial()
     {
         if (!SpecialActive) return;
-        Instantiate(thunderPrefab,  transform.position + (transform.forward * 10), Quaternion.Euler(90, 0, 0));
-        ActivateSpecial(false);
-        Timer = 0f;
+        foreach (PlayerScript player in PlayerList)
+        {
+            if (Vector3.Distance(transform.position, player.transform.position) < shieldRange)
+                Instantiate(shieldPrefab, player.transform);
+        }
     }
 }

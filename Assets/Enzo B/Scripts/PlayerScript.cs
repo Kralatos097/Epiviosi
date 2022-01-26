@@ -14,7 +14,12 @@ public abstract class PlayerScript : MonoBehaviour
     public static List<PlayerScript> PlayerList = new List<PlayerScript>();
     protected float Timer;
     protected bool SpecialActive;
+    public float coolDown;
 
+    private void Awake()
+    {
+        PlayerList.Add(this);
+    }
 
     public void Move(Vector2 movement, float speed)
     {
