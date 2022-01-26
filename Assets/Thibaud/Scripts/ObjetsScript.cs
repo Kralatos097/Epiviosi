@@ -9,7 +9,20 @@ public abstract class ObjetsScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        UseItem(other);
+        if (other.CompareTag("Player"))
+        {
+            UseItem(other);
+            
+            DespawnObject();
+        }
+    }
+
+    private void DespawnObject()
+    {
+        //Object Spawn Count -1 dans le fichier ItemSpawner
+            
+        DeactivateCollider();
+        DeactivateSprite();
     }
 
     protected void DestroyObject()
@@ -17,13 +30,13 @@ public abstract class ObjetsScript : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected void DeactivateSprite()
+    private void DeactivateSprite()
     {
-        
+        gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
     }
-    
-    protected void DeactivateCollider()
+
+    private void DeactivateCollider()
     {
-        
+        gameObject.GetComponentInChildren<BoxCollider>().enabled = false;
     }
 }

@@ -5,27 +5,22 @@ using UnityEngine;
 
 public class ObjetPlumeScript : ObjetsScript
 {
-    public float SpeedMult;
-    public float BuffTime;
+    public float SpeedMult = 2;
+    public float BuffTime = 5;
     
     private Collider _collider;
 
     protected override void UseItem(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            _collider = other;
-            //_collider.GetComponent<Player>().speed *2;
+        _collider = other;
+        _collider.GetComponent<PlayerScript>().speed *= SpeedMult;
 
-            Invoke("SpeedToNormal", 5f);
-
-            
-        }
+        Invoke("SpeedToNormal", BuffTime);
     }
 
     private void SpeedToNormal()
     {
-        //_collider.GetComponent<Player>().speed/2;
+        _collider.GetComponent<PlayerScript>().speed /= SpeedMult;
         DestroyObject();
     }
 }
