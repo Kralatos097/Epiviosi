@@ -37,6 +37,6 @@ public abstract class ObjetsScript : MonoBehaviour
 
     private void DeactivateCollider()
     {
-        gameObject.GetComponentInChildren<BoxCollider>().enabled = false;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 }
