@@ -27,13 +27,21 @@ public class ThunderBehaviour : MonoBehaviour
     {
         foreach (NavMeshAgent agent in ennemiesAgents)
         {
-            agent.transform.GetComponent<EnnemiesBehaviour>().Life.LossLife(2);
+            agent.transform.GetComponent<EnnemiesBehaviour>().GetHurt(2);
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.transform.TryGetComponent(out NavMeshAgent navMesh))
+        {
+            foreach (NavMeshAgent agent in ennemiesAgents)
+            {
+                if (agent == navMesh)
+                    return;
+            }
             ennemiesAgents.Add(navMesh);
+        }
+            
     }
 }

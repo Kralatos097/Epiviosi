@@ -131,8 +131,9 @@ MonoBehaviour:
   controller: {fileID: 5357814750509228717}
   maxHp: 2
   speed: 4
-  coolDown: 20
+  coolDown: 1
   ShieldActive: 0
+  BuffActive: 0
   thunderPrefab: {fileID: 4287045500877325786, guid: cf1caf92d86b29b4aa3a834d626c2549, type: 3}
 --- !u!114 &5357814750509228715
 MonoBehaviour:

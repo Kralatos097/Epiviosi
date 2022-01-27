@@ -20,7 +20,7 @@ public class EnnemiesBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        Life.InitialiseLife(2);
+        Life.InitialiseLife(health);
         if (agent == null) agent = GetComponent<NavMeshAgent>();
         EnnemiesList.Add(this);
         agent.speed = speed;

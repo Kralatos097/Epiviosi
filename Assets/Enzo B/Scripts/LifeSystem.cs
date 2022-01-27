@@ -16,7 +16,7 @@ public class LifeSystem
                 _currentHp = maxHp;
                 return;
             }
-            if (_currentHp >= 0) return;
+            if (_currentHp > 0) return;
             _currentHp = 0;
             isDead = true;
         }
