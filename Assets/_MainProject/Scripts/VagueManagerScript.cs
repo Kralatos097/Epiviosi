@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VagueManagerScript : MonoBehaviour
 {
@@ -67,13 +68,13 @@ public class VagueManagerScript : MonoBehaviour
     //Lance la victoire si toutes les manches sont réussie
     private void Victoire()
     {
-        
+        //SceneManager.LoadSceneAsync("Victoire");
     }
 
     //Lance la défaite si tous les joueurs meurs ou si le timer est finit
     private void Defaite()
     {
-        
+        //SceneManager.LoadSceneAsync("defaite");
     }
 
     //Fait apparaitre les ennemis au début d'une manche
