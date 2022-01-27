@@ -47,8 +47,8 @@ MonoBehaviour:
   NbVagueFinale: 5
   ListSpawnEnnemis: {fileID: 0}
   EnnemisParent: {fileID: 0}
-  EnnA: {fileID: 7548249690725920715, guid: 77501b9070670e144b5e5268ded85ac5, type: 3}
-  EnnB: {fileID: 1899009074861652431, guid: ae78685f05970084daac3503437b9a8b, type: 3}
+  EnnA: {fileID: 1904846558479599427, guid: 94d6ea2bc59ce0e488eed4ca7726488f, type: 3}
+  EnnB: {fileID: 5951881503709194722, guid: 78e435237389f564b9c9778c5240b64d, type: 3}
   TimeBetweenWave: 10
   _nbVague: 0
 --- !u!114 &7189943769935176146
