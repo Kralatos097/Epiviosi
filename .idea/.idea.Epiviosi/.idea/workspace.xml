@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4624d00a-3574-4aef-af4f-6aea0869e2ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Epiviosi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Epiviosi/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scripts/CountDownTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/CountDownTimer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/TimerPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/TimerPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/AreneScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/AreneScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/VagueManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/VagueManagerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +24,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SwitchPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Hades.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Zeus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/ShieldBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Athena.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurControlleur.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/Lifesysteme.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,10 +32,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/TyphoonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Poseidon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/EnnemiesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/LifeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/EnnemiesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/AttackZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SkullBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SwitchPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Hades.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Zeus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/ShieldBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="248e1egIv2OR5hl6qd1AExmwNjk" />
   <component name="ProjectViewState">

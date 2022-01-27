@@ -35,6 +35,7 @@ public class CountDownTimer : MonoBehaviour
 
     public void RestartTimer()
     {
-        
+        currenTime = duration;
+        TimerEnded = false;
     }
 }

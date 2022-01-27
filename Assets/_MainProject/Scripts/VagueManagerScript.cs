@@ -49,12 +49,13 @@ public class VagueManagerScript : MonoBehaviour
     //Lance une nouvelle manche
     private void NewVague()
     {
-        Debug.Log("ffffffffffff");
         _nbVague++;
                 
         PlayerFullHeal();
         EnnemisSpawn();
         
+        gameObject.GetComponent<CountDownTimer>().RestartTimer();
+
         //reactivate objects spawn
     }
 
