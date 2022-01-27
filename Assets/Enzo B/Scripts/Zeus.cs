@@ -35,7 +35,7 @@ public class Zeus : PlayerScript
     public override void OnSpecial()
     {
         if (!SpecialActive) return;
-        Instantiate(thunderPrefab,  transform.position + (transform.forward * 10), Quaternion.Euler(90, 0, 0));
+        Instantiate(thunderPrefab,  transform.position + (transform.forward * 10), Quaternion.identity);
         ActivateSpecial(false);
         Timer = 0f;
     }
