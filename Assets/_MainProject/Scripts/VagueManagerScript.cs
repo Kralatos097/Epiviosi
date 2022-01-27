@@ -20,11 +20,11 @@ public class VagueManagerScript : MonoBehaviour
     
     //Private
     public int _nbVague = 0;
-    private float _waveTimer = 0;
+    private float _btWaveTimer = 0;
     
     void Start()
     {
-        _waveTimer = TimeBetweenWave;
+        _btWaveTimer = TimeBetweenWave;
         
         NewVague();
     }
@@ -37,12 +37,12 @@ public class VagueManagerScript : MonoBehaviour
             if (_nbVague >= NbVagueFinale) Victoire();
             else
             {
-                if (_waveTimer <= 0)
+                if (_btWaveTimer <= 0)
                 {
                     NewVague();
-                    _waveTimer = TimeBetweenWave;
+                    _btWaveTimer = TimeBetweenWave;
                 }
-                else _waveTimer -= Time.deltaTime;
+                else _btWaveTimer -= Time.deltaTime;
             }
     }
 
@@ -54,6 +54,8 @@ public class VagueManagerScript : MonoBehaviour
         PlayerFullHeal();
         EnnemisSpawn();
         
+        gameObject.GetComponent<CountDownTimer>().RestartTimer();
+
         //reactivate objects spawn
     }
 
@@ -78,6 +80,7 @@ public class VagueManagerScript : MonoBehaviour
         for (int i = 0; i < nbEnnemisB; i++)
         {
             SpawnOneEnnemi(0);
+            Debug.Log("Spawn Enemy");
 
             if (i < nbEnnemisA)
             {
@@ -107,7 +110,7 @@ public class VagueManagerScript : MonoBehaviour
     {
         foreach (PlayerScript player in PlayerScript.PlayerList)
         {
-            //regen full vie
+            player.Life.InitialiseLife(player.maxHp);
         }
     }
 
@@ -116,10 +119,10 @@ public class VagueManagerScript : MonoBehaviour
     {
         foreach (PlayerScript player in PlayerScript.PlayerList)
         {
-            /*if(!player.isDead)
+            if(!player.Life.isDead)
             {
                 return false;
-            }*/
+            }
         }
 
         return true;
@@ -128,12 +131,12 @@ public class VagueManagerScript : MonoBehaviour
     //return true si il n'y a pas d'ennemis est finit, false snn
     private bool CheckEnnemiAlive()
     {
-        return Ennemis.EnnemisList.Count <= 0;
+        return EnnemiesBehaviour.EnnemiesList.Count <= 0;
     }
 
     //return true si le timer est finit, false snn
     private bool CheckTimer()
     {
-        return Timer.TimerEnd;
+        return gameObject.GetComponent<CountDownTimer>().TimerEnded;
     }
 }

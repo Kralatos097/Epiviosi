@@ -12,8 +12,4 @@ public class HealBar : MonoBehaviour
             //slider.maxValue = maxHealth;
             //slider.value = health;
         }
-        // public void SetHealth(int health, maxHealth)
-        // {
-        //     slider.fillAmount = health / maxHealth;
-        // }
 }

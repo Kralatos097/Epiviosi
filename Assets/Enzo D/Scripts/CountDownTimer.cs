@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CountDownTimer : MonoBehaviour
 {
-    [SerializeField] private GameObject panel;
 
     [SerializeField] private Image timeImage;
 
     [SerializeField] private Text timeText;
 
     [SerializeField] private float duration, currenTime;
+
+    public bool TimerEnded = false;
     
     void Start()
     {
-       panel.SetActive(false);
        currenTime = duration;
        timeText.text = currenTime.ToString();
        StartCoroutine(TimeIEn());
@@ -29,14 +29,13 @@ public class CountDownTimer : MonoBehaviour
             yield return new WaitForSeconds(1f);
             currenTime--;
         }
-        OpenPanel();
+
+        TimerEnded = true;
     }
 
-    void OpenPanel()
+    public void RestartTimer()
     {
-        timeText.text = "";
-        panel.SetActive(true);
+        currenTime = duration;
+        TimerEnded = false;
     }
-
-    
 }
