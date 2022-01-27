@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4624d00a-3574-4aef-af4f-6aea0869e2ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/Damage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/Damage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/HealSysteme.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/Lifesysteme.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/Lifesysteme.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Epiviosi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Epiviosi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scenes/map test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo D/Scenes/map test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurLife.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurLife.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/HealSysteme.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scenes/TestThibaud.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thibaud/Scenes/TestThibaud.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scenes/Victoire.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo D/Scenes/Victoire.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scenes/defaite.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo D/Scenes/defaite.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +53,7 @@
       <workItem from="1643103541632" duration="74000" />
       <workItem from="1643103662765" duration="2097000" />
       <workItem from="1643186066498" duration="9648000" />
+      <workItem from="1643288468288" duration="3103000" />
     </task>
     <servers />
   </component>
