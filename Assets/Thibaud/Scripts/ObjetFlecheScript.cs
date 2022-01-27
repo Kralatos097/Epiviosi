@@ -16,7 +16,7 @@ public class ObjetFlecheScript : ObjetsScript
 
         foreach (EnnemiesBehaviour ennemi in listEnn)
         {
-            ennemi.GetHurt();
+            //ennemi.GetHurt();
         }
     }
 
