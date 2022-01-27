@@ -34,16 +34,21 @@ public class VagueManagerScript : MonoBehaviour
         if (CheckTimer()) Defaite();
         if (CheckPlayerAlive()) Defaite();
         if (CheckEnnemiAlive())
+        {
             if (_nbVague >= NbVagueFinale) Victoire();
             else
             {
+                gameObject.GetComponent<CountDownTimer>().TimerPause();
                 if (_btWaveTimer <= 0)
                 {
                     NewVague();
                     _btWaveTimer = TimeBetweenWave;
                 }
                 else _btWaveTimer -= Time.deltaTime;
+
+                Debug.Log(_btWaveTimer);
             }
+        }
     }
 
     //Lance une nouvelle manche
