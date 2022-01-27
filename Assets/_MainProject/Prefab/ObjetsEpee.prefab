@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1754071059013953504
+--- !u!1001 &7365157225790519973
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,22 +9,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8769520396989126388, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
       propertyPath: m_Name
-      value: ObjetsCoeur
+      value: ObjetsEpee
       objectReference: {fileID: 0}
     - target: {fileID: 8769520396989126390, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
       propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8769520396989126390, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8769520396989126390, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8769520396989126390, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8769520396989126390, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
@@ -55,9 +43,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8769520398072845924, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769520398072845924, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769520398072845924, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 8769520398072845927, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a615f81dc4520254bac67b3e541d551d, type: 3}
+      objectReference: {fileID: 21300000, guid: d857f37223dc6a64ba59c1a5eb3d70d4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 294fc4bc5680057428784b9dde9a7290, type: 3}

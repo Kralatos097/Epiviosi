@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CountDownTimer : MonoBehaviour
 {
-    [SerializeField] private GameObject panel;
 
     [SerializeField] private Image timeImage;
 
@@ -14,7 +13,6 @@ public class CountDownTimer : MonoBehaviour
     
     void Start()
     {
-       panel.SetActive(false);
        currenTime = duration;
        timeText.text = currenTime.ToString();
        StartCoroutine(TimeIEn());
@@ -29,13 +27,6 @@ public class CountDownTimer : MonoBehaviour
             yield return new WaitForSeconds(1f);
             currenTime--;
         }
-        OpenPanel();
-    }
-
-    void OpenPanel()
-    {
-        timeText.text = "";
-        panel.SetActive(true);
     }
 
     

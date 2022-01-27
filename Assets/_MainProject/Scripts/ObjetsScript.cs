@@ -6,6 +6,13 @@ using UnityEngine;
 public abstract class ObjetsScript : MonoBehaviour
 {
     protected abstract void UseItem(Collider other);
+    private ItemsSpawner itemsSpawner;
+
+    private void Start()
+    {
+        GameObject spawner = GameObject.FindGameObjectWithTag("Spawner");
+        itemsSpawner = spawner.GetComponent<ItemsSpawner>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,6 +20,7 @@ public abstract class ObjetsScript : MonoBehaviour
         {
             UseItem(other);
             
+            itemsSpawner.RemoveItemFromList(this.gameObject);
             DespawnObject();
         }
     }

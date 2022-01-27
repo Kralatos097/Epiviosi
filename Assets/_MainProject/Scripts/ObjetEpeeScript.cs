@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class ObjetSablierScript : ObjetsScript
+public class ObjetEpeeScript : ObjetsScript
 {
     protected override void UseItem(Collider other)
     {
-        //other.GetComponent<PlayerScript>().;
+        other.GetComponent<PlayerScript>().BuffActive = true;
+        
+        DestroyObject();
     }
 }

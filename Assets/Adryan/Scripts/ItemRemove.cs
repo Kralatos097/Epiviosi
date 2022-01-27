@@ -17,7 +17,7 @@ public class ItemRemove : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //l'item fait son boulotet s'enleve
+            //l'item fait son boulot et s'enleve
             itemsSpawner.RemoveItemFromList(this.gameObject);
             Destroy(this.gameObject);
         }

@@ -49,6 +49,7 @@ public class VagueManagerScript : MonoBehaviour
     //Lance une nouvelle manche
     private void NewVague()
     {
+        Debug.Log("ffffffffffff");
         _nbVague++;
                 
         PlayerFullHeal();
@@ -78,6 +79,7 @@ public class VagueManagerScript : MonoBehaviour
         for (int i = 0; i < nbEnnemisB; i++)
         {
             SpawnOneEnnemi(0);
+            Debug.Log("Spawn Enemy");
 
             if (i < nbEnnemisA)
             {
@@ -107,7 +109,7 @@ public class VagueManagerScript : MonoBehaviour
     {
         foreach (PlayerScript player in PlayerScript.PlayerList)
         {
-            //regen full vie
+            player.Life.InitialiseLife(player.maxHp);
         }
     }
 
@@ -116,10 +118,10 @@ public class VagueManagerScript : MonoBehaviour
     {
         foreach (PlayerScript player in PlayerScript.PlayerList)
         {
-            /*if(!player.isDead)
+            if(!player.Life.isDead)
             {
                 return false;
-            }*/
+            }
         }
 
         return true;
@@ -128,7 +130,7 @@ public class VagueManagerScript : MonoBehaviour
     //return true si il n'y a pas d'ennemis est finit, false snn
     private bool CheckEnnemiAlive()
     {
-        return Ennemis.EnnemisList.Count <= 0;
+        return EnnemiesBehaviour.EnnemiesList.Count <= 0;
     }
 
     //return true si le timer est finit, false snn

@@ -6,11 +6,46 @@
   <component name="ChangeListManager">
     <list default="true" id="4624d00a-3574-4aef-af4f-6aea0869e2ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Epiviosi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Epiviosi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adryan.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scenes/TestThibaud.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thibaud/Scenes/TestThibaud.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurLife.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurLife.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scenes/TestThibaud.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thibaud/Scenes/TestThibaud.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adryan/Scenes/ItemsSpawn.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adryan/Scenes/ItemsSpawn.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adryan/Scripts/ItemRemove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adryan/Scripts/ItemRemove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adryan/Scripts/ItemsSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Adryan/Scripts/ItemsSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scenes/test timer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo D/Scenes/test timer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/CanvasInGameHUD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/CanvasInGameHUD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/Directional Light.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/Directional Light.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/Main Camera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/Main Camera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/Objets.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/Objets.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsCoeur.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsCoeur.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsEpee.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsEpee.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsFleche.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsFleche.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsPlume.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsPlume.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsSablier.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Prefab/ObjetsSablier.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetCoeurScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetCoeurScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetEpeeScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetEpeeScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetFlecheScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetFlecheScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetPlumeScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetPlumeScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetSablierScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetSablierScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetsScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetsScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/VagueManagerScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thibaud/Scripts/VagueManagerScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,33 +65,22 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetFlecheScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetEpeeScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurLife.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetCoeurScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetPlumeScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thibaud/Scripts/ObjetSablierScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurControlleur.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/Lifesysteme.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Zeus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Athena.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/TyphoonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Poseidon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/ShieldBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/EnnemiesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Hades.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SwitchPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/EnnemiesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurLife.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/LifeSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/ShieldBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Poseidon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SkullBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Athena.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/AttackZone.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Zeus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/91/1daf0110/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurControlleur.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Poseidon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/TyphoonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/Lifesysteme.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Thibaud/Scripts/VagueManagerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/LifeSystem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="248e1egIv2OR5hl6qd1AExmwNjk" />
   <component name="ProjectViewState">
@@ -89,10 +113,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9360">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9360" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -149,14 +173,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Enzo B/Scripts/ThunderBehaviour.cs</url>
           <line>26</line>
-          <properties documentPath="C:\Users\enzo.benedetti\Documents\Epiviosi\Assets\Enzo B\Scripts\ThunderBehaviour.cs" initialLine="26" containingFunctionPresentation="method 'OnDestroy'">
-            <startOffsets>
-              <option value="556" />
-            </startOffsets>
-            <endOffsets>
-              <option value="557" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\enzo.benedetti\Documents\Epiviosi\Assets\Enzo B\Scripts\ThunderBehaviour.cs" initialLine="26" containingFunctionPresentation="method 'OnDestroy'" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

@@ -14,21 +14,21 @@ public class ObjetFlecheScript : ObjetsScript
     {
         GetEnnemisTouched();
 
-        foreach (EnnemiesBehaviour ennemi in listEnn)
+        foreach (EnnemiesBehaviour ennemy in listEnn)
         {
-            ennemi.GetHurt();
+            ennemy.GetHurt(Dmg);
         }
     }
 
-    public void GetEnnemisTouched()
+    private void GetEnnemisTouched()
     {
         float distOne = 10000;
         float distTwo = 10000;
         float distThree = 10000;
         
-        foreach (EnnemiesBehaviour ennemi in EnnemiesBehaviour.EnnemiesList)
+        foreach (EnnemiesBehaviour enemy in EnnemiesBehaviour.EnnemiesList)
         {
-            float dist = Vector3.Distance(ennemi.transform.position, transform.position);
+            float dist = Vector3.Distance(enemy.transform.position, transform.position);
 
             if(dist < distOne)
             {
@@ -42,7 +42,7 @@ public class ObjetFlecheScript : ObjetsScript
 
                         listEnn[0] = listEnn[1];
                         listEnn[1] = listEnn[2];
-                        listEnn[2] = ennemi;
+                        listEnn[2] = enemy;
                     }
                     else
                     {
@@ -50,16 +50,18 @@ public class ObjetFlecheScript : ObjetsScript
                         distTwo = dist;
                         
                         listEnn[0] = listEnn[1];
-                        listEnn[1] = ennemi;
+                        listEnn[1] = enemy;
                     }
                 }
                 else
                 {
                     distOne = dist;
                     
-                    listEnn[0] = ennemi;
+                    listEnn[0] = enemy;
                 }
             }
         }
+
+        DestroyObject();
     }
 }

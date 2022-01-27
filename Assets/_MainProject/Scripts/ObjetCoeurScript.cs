@@ -9,6 +9,8 @@ public class ObjetCoeurScript : ObjetsScript
     
     protected override void UseItem(Collider other)
     {
-        //Regen pv au joueur
+        other.GetComponent<PlayerScript>().Life.currentHp++;
+        
+        DestroyObject();
     }
 }
