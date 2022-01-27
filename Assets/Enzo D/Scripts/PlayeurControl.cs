@@ -97,6 +97,33 @@ public class @PlayeurControl : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""UI"",
+            ""id"": ""31006e81-1633-4569-97b4-371ed84a8455"",
+            ""actions"": [
+                {
+                    ""name"": ""Confirm"",
+                    ""type"": ""Button"",
+                    ""id"": ""15c97fb0-552a-4819-95d0-431899f133f1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3c2a1634-af98-4ebe-90f5-2a88669aa02b"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Confirm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -107,6 +134,9 @@ public class @PlayeurControl : IInputActionCollection, IDisposable
         m_Arène_Attack = m_Arène.FindAction("Attack", throwIfNotFound: true);
         m_Arène_Special = m_Arène.FindAction("Special", throwIfNotFound: true);
         m_Arène_Pause = m_Arène.FindAction("Pause", throwIfNotFound: true);
+        // UI
+        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
+        m_UI_Confirm = m_UI.FindAction("Confirm", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -209,11 +239,48 @@ public class @PlayeurControl : IInputActionCollection, IDisposable
         }
     }
     public ArèneActions @Arène => new ArèneActions(this);
+
+    // UI
+    private readonly InputActionMap m_UI;
+    private IUIActions m_UIActionsCallbackInterface;
+    private readonly InputAction m_UI_Confirm;
+    public struct UIActions
+    {
+        private @PlayeurControl m_Wrapper;
+        public UIActions(@PlayeurControl wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Confirm => m_Wrapper.m_UI_Confirm;
+        public InputActionMap Get() { return m_Wrapper.m_UI; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
+        public void SetCallbacks(IUIActions instance)
+        {
+            if (m_Wrapper.m_UIActionsCallbackInterface != null)
+            {
+                @Confirm.started -= m_Wrapper.m_UIActionsCallbackInterface.OnConfirm;
+                @Confirm.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnConfirm;
+                @Confirm.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnConfirm;
+            }
+            m_Wrapper.m_UIActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Confirm.started += instance.OnConfirm;
+                @Confirm.performed += instance.OnConfirm;
+                @Confirm.canceled += instance.OnConfirm;
+            }
+        }
+    }
+    public UIActions @UI => new UIActions(this);
     public interface IArèneActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnSpecial(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+    }
+    public interface IUIActions
+    {
+        void OnConfirm(InputAction.CallbackContext context);
     }
 }
