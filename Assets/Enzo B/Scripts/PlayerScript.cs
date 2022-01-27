@@ -37,6 +37,7 @@ public abstract class PlayerScript : MonoBehaviour
     
     void Update()
     {
+        if (Life.isDead) return;
         Timer += Time.deltaTime;
         if (Timer >= coolDown)
         {
@@ -49,12 +50,14 @@ public abstract class PlayerScript : MonoBehaviour
 
     public void Move(Vector2 movement, float speed)
     {
+        if (Life.isDead) return;
         controller.Move(new Vector3(movement.x, 0f, movement.y) * speed);
         transform.LookAt(transform.position + new Vector3(movement.x, 0f, movement.y));
     }
 
     public void OnAttack()
     {
+        if (Life.isDead) return;
         foreach (EnnemiesBehaviour enemy in AttackZone.enemiesInZone)
         {
             enemy.GetHurt(BuffActive ? 2 : 1);
@@ -63,7 +66,15 @@ public abstract class PlayerScript : MonoBehaviour
         BuffActive = false;
     }
 
-    public abstract void OnMovement(InputValue value);
+    public void OnMovement(InputValue value)
+    {
+        if (Life.isDead) return;
+        ValueCheck = value.Get<Vector2>();
+        if (ValueCheck.x < 0.5f && ValueCheck.x > -0.5f && ValueCheck.y < 0.5 && ValueCheck.y > -0.5f)
+            Movement = Vector2.zero;
+        else
+            Movement = value.Get<Vector2>() * Time.deltaTime * speed;
+    }
 
     public abstract void OnSpecial();
 

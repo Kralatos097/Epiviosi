@@ -12,17 +12,9 @@ public class Zeus : PlayerScript
         
     }
 
-    public override void OnMovement(InputValue value)
-    {
-        ValueCheck = value.Get<Vector2>();
-        if (ValueCheck.x < 0.5f && ValueCheck.x > -0.5f && ValueCheck.y < 0.5 && ValueCheck.y > -0.5f)
-            Movement = Vector2.zero;
-        else
-            Movement = value.Get<Vector2>() * Time.deltaTime * speed;
-    }
-
     public override void OnSpecial()
     {
+        if (Life.isDead) return;
         if (!SpecialActive) return;
         Instantiate(thunderPrefab,  transform.position + (transform.forward * 10), Quaternion.identity);
         ActivateSpecial(false);
