@@ -27,7 +27,7 @@ public class ThunderBehaviour : MonoBehaviour
     {
         foreach (NavMeshAgent agent in ennemiesAgents)
         {
-            Debug.Log("GetKill 2PV " + agent.gameObject.name);
+            agent.transform.GetComponent<EnnemiesBehaviour>().Life.LossLife(2);
         }
     }
 

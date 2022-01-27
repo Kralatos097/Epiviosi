@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public abstract class PlayerScript : MonoBehaviour
 {
     public CharacterController controller;
-    public float maxHp;
+    public int maxHp;
     public float speed = 3f;
     protected Vector2 Movement;
     protected Vector2 ValueCheck;
@@ -17,10 +17,12 @@ public abstract class PlayerScript : MonoBehaviour
     public float coolDown;
     public bool ShieldActive = false;
     public bool BuffActive = false;
+    public LifeSystem Life = new LifeSystem();
 
     private void Awake()
     {
         PlayerList.Add(this);
+        Life.InitialiseLife(maxHp);
     }
 
     public void Move(Vector2 movement, float speed)
