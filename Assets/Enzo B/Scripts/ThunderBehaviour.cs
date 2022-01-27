@@ -29,9 +29,14 @@ public class ThunderBehaviour : MonoBehaviour
         {
             agent.transform.GetComponent<EnnemiesBehaviour>().GetHurt(2);
         }
+
+        foreach (PlayerScript player in PlayerScript.PlayerList)
+        {
+            player.AttackZone.enemiesInZone.Clear();
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.transform.TryGetComponent(out NavMeshAgent navMesh))
         {

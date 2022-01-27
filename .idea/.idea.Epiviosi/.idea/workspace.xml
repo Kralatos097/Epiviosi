@@ -126,25 +126,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Enzo B/Scripts/ThunderBehaviour.cs</url>
-          <line>26</line>
-          <properties documentPath="C:\Users\enzo.benedetti\Documents\Epiviosi\Assets\Enzo B\Scripts\ThunderBehaviour.cs" initialLine="26" containingFunctionPresentation="method 'OnDestroy'">
-            <startOffsets>
-              <option value="556" />
-            </startOffsets>
-            <endOffsets>
-              <option value="557" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
