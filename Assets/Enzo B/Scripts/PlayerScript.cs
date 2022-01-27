@@ -18,6 +18,7 @@ public abstract class PlayerScript : MonoBehaviour
     public bool ShieldActive = false;
     public bool BuffActive = false;
     public LifeSystem Life = new LifeSystem();
+    public AttackZone AttackZone;
 
     private void Awake()
     {
@@ -33,7 +34,10 @@ public abstract class PlayerScript : MonoBehaviour
 
     public void OnAttack()
     {
-        Debug.Log("Attack");
+        foreach (EnnemiesBehaviour enemy in AttackZone.enemiesInZone)
+        {
+            enemy.GetHurt(BuffActive ? 2 : 1);
+        }
         BuffActive = false;
     }
 

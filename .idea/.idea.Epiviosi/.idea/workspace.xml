@@ -33,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Poseidon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SkullBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Athena.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/AttackZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Zeus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/91/1daf0110/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -91,7 +92,7 @@
       <workItem from="1643102708293" duration="642000" />
       <workItem from="1643186564644" duration="14706000" />
       <workItem from="1643272351133" duration="525000" />
-      <workItem from="1643274105122" duration="1147000" />
+      <workItem from="1643274105122" duration="2211000" />
     </task>
     <servers />
   </component>
