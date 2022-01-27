@@ -23,6 +23,7 @@ public abstract class PlayerScript : MonoBehaviour
     public string UIParentName;
     public Image fillCooldown;
     public Text CooldownText;
+    public Animator AnimatorPlayer;
 
     private void Awake()
     {
@@ -46,6 +47,8 @@ public abstract class PlayerScript : MonoBehaviour
         Move(Movement, speed);
         fillCooldown.fillAmount =  1 - Timer / coolDown;
         CooldownText.text = ((int)(coolDown - Timer)).ToString();
+        
+        AnimatorPlayer.SetFloat("movement", Movement.magnitude);
     }
 
     public void Move(Vector2 movement, float speed)
@@ -64,6 +67,7 @@ public abstract class PlayerScript : MonoBehaviour
         }
         AttackZone.enemiesInZone.Clear();
         BuffActive = false;
+        AnimatorPlayer.SetTrigger("attack");
     }
 
     public void OnMovement(InputValue value)
