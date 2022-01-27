@@ -10,6 +10,8 @@ public class CountDownTimer : MonoBehaviour
     [SerializeField] private Text timeText;
 
     [SerializeField] private float duration, currenTime;
+
+    public bool TimerEnded = false;
     
     void Start()
     {
@@ -27,7 +29,12 @@ public class CountDownTimer : MonoBehaviour
             yield return new WaitForSeconds(1f);
             currenTime--;
         }
+
+        TimerEnded = true;
     }
 
-    
+    public void RestartTimer()
+    {
+        
+    }
 }

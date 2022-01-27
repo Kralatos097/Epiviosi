@@ -20,11 +20,11 @@ public class VagueManagerScript : MonoBehaviour
     
     //Private
     public int _nbVague = 0;
-    private float _waveTimer = 0;
+    private float _btWaveTimer = 0;
     
     void Start()
     {
-        _waveTimer = TimeBetweenWave;
+        _btWaveTimer = TimeBetweenWave;
         
         NewVague();
     }
@@ -37,12 +37,12 @@ public class VagueManagerScript : MonoBehaviour
             if (_nbVague >= NbVagueFinale) Victoire();
             else
             {
-                if (_waveTimer <= 0)
+                if (_btWaveTimer <= 0)
                 {
                     NewVague();
-                    _waveTimer = TimeBetweenWave;
+                    _btWaveTimer = TimeBetweenWave;
                 }
-                else _waveTimer -= Time.deltaTime;
+                else _btWaveTimer -= Time.deltaTime;
             }
     }
 
@@ -136,6 +136,6 @@ public class VagueManagerScript : MonoBehaviour
     //return true si le timer est finit, false snn
     private bool CheckTimer()
     {
-        return Timer.TimerEnd;
+        return gameObject.GetComponent<CountDownTimer>().TimerEnded;
     }
 }

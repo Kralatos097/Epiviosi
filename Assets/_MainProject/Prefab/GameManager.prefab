@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8393748929802516307}
   - component: {fileID: 8393748929802516306}
-  - component: {fileID: 8393748929802516305}
+  - component: {fileID: 7189943769935176146}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -51,7 +51,7 @@ MonoBehaviour:
   EnnB: {fileID: 1899009074861652431, guid: ae78685f05970084daac3503437b9a8b, type: 3}
   TimeBetweenWave: 10
   _nbVague: 0
---- !u!114 &8393748929802516305
+--- !u!114 &7189943769935176146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,7 +60,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8393748929802516304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d3efa2f90accc147867b5780f595e00, type: 3}
+  m_Script: {fileID: 11500000, guid: ffa022daec057fd4cad67e67e53472b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TempsManche: 5
+  timeImage: {fileID: 0}
+  timeText: {fileID: 0}
+  duration: 500
+  currenTime: 0
