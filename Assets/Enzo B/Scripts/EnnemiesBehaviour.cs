@@ -15,10 +15,12 @@ public class EnnemiesBehaviour : MonoBehaviour
     public float attackBuffer;
     private float _attackCooldown;
     public int health = 2;
+    public LifeSystem Life = new LifeSystem();
     public bool cursed = false;
 
     private void Awake()
     {
+        Life.InitialiseLife(health);
         if (agent == null) agent = GetComponent<NavMeshAgent>();
         EnnemiesList.Add(this);
         agent.speed = speed;
@@ -87,6 +89,7 @@ public class EnnemiesBehaviour : MonoBehaviour
     {
         if (_attackCooldown >= attackBuffer)
         {
+            //Verifie si le personnage a un shield
             if (player.GetComponent<PlayerScript>().ShieldActive)
             {
                 Destroy(player.GetComponentInChildren<ShieldBehaviour>().gameObject);
@@ -95,15 +98,15 @@ public class EnnemiesBehaviour : MonoBehaviour
             else
             {
                 _attackCooldown = 0f;
-                //player.health--;
+                player.GetComponent<PlayerScript>().Life.LossLife(1);
             }
         }
     }
 
     public void GetHurt(int healthLost)
     {
-        health -= healthLost;
-        if (health <= 0)
+        Life.LossLife(cursed ? healthLost * 2 : healthLost);
+        if (Life.isDead)
             Destroy(gameObject);
         if (cursed)
             Destroy(transform.GetChild(0));
