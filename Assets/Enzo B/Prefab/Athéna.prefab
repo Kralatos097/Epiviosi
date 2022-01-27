@@ -211,6 +211,9 @@ MonoBehaviour:
   ShieldActive: 0
   BuffActive: 0
   AttackZone: {fileID: 0}
+  UIParentName: Player3Athena
+  fillCooldown: {fileID: 0}
+  CooldownText: {fileID: 0}
   shieldPrefab: {fileID: 8516058633305801313, guid: 3267f70bd7e66cd45ac7f556038a6794, type: 3}
   shieldRange: 10
 --- !u!114 &5274924816840289578

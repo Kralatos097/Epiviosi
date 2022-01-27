@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public abstract class PlayerScript : MonoBehaviour
 {
@@ -19,11 +20,31 @@ public abstract class PlayerScript : MonoBehaviour
     public bool BuffActive = false;
     public LifeSystem Life = new LifeSystem();
     public AttackZone AttackZone;
+    public string UIParentName;
+    public Image fillCooldown;
+    public Text CooldownText;
 
     private void Awake()
     {
         PlayerList.Add(this);
         Life.InitialiseLife(maxHp);
+        GameObject UIGo = GameObject.Find(UIParentName);
+        CooldownText = UIGo.GetComponentInChildren<Text>();
+        fillCooldown = CooldownText.transform.GetComponentInParent<Image>();
+        fillCooldown.type = Image.Type.Filled;
+        fillCooldown.fillOrigin = 2;
+    }
+    
+    void Update()
+    {
+        Timer += Time.deltaTime;
+        if (Timer >= coolDown)
+        {
+            ActivateSpecial(true);
+        }
+        Move(Movement, speed);
+        fillCooldown.fillAmount =  1 - Timer / coolDown;
+        CooldownText.text = ((int)(coolDown - Timer)).ToString();
     }
 
     public void Move(Vector2 movement, float speed)
@@ -38,6 +59,7 @@ public abstract class PlayerScript : MonoBehaviour
         {
             enemy.GetHurt(BuffActive ? 2 : 1);
         }
+        AttackZone.enemiesInZone.Clear();
         BuffActive = false;
     }
 

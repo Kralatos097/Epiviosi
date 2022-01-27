@@ -12,17 +12,6 @@ public class Zeus : PlayerScript
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Timer += Time.deltaTime;
-        if (Timer >= coolDown)
-        {
-            ActivateSpecial(true);
-        }
-        Move(Movement, speed);
-    }
-
     public override void OnMovement(InputValue value)
     {
         ValueCheck = value.Get<Vector2>();

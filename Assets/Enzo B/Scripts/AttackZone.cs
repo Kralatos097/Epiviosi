@@ -7,7 +7,7 @@ public class AttackZone : MonoBehaviour
 {
     public List<EnnemiesBehaviour> enemiesInZone = new List<EnnemiesBehaviour>();
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.transform.TryGetComponent(out EnnemiesBehaviour enemy))
         {

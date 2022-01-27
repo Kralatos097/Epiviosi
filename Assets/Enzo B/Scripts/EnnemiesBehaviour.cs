@@ -24,6 +24,7 @@ public class EnnemiesBehaviour : MonoBehaviour
         if (agent == null) agent = GetComponent<NavMeshAgent>();
         EnnemiesList.Add(this);
         agent.speed = speed;
+        
     }
 
     // Update is called once per frame
