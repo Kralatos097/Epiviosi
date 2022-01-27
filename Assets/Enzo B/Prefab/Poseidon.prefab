@@ -160,6 +160,9 @@ MonoBehaviour:
   ShieldActive: 0
   BuffActive: 0
   AttackZone: {fileID: 0}
+  UIParentName: Player2Poseidon
+  fillCooldown: {fileID: 0}
+  CooldownText: {fileID: 0}
   typhoonPrefab: {fileID: 8405339698793381188, guid: ccd80c5cc13ef0041a043f08487f8dbd, type: 3}
 --- !u!143 &4704703885030000191
 CharacterController:

@@ -211,6 +211,9 @@ MonoBehaviour:
   ShieldActive: 0
   BuffActive: 0
   AttackZone: {fileID: 0}
+  UIParentName: Player4Hades
+  fillCooldown: {fileID: 0}
+  CooldownText: {fileID: 0}
   skull: {fileID: 1576665416217942154, guid: f3d1317bfc17cf04b8ee6be94c0b166b, type: 3}
   ennemyCursed: 3
 --- !u!114 &2648889752968144634
