@@ -18,10 +18,9 @@ public class ItemsSpawner : MonoBehaviour
 
     private bool isSpawning = false;
 
-    private void Start()
+    /*private void Start()
     {
         StartCoroutine(SpawnItems());
-      
     }
 
     private void FixedUpdate()
@@ -30,7 +29,7 @@ public class ItemsSpawner : MonoBehaviour
         {
             Invoke("start", 1f);
         }
-    }
+    }*/
 
     IEnumerator SpawnItems()
     {
