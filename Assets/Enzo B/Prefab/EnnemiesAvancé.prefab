@@ -11,9 +11,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: "EnnemiesAvanc\xE9"
       objectReference: {fileID: 0}
-    - target: {fileID: 5951881503709194725, guid: 78e435237389f564b9c9778c5240b64d, type: 3}
-      propertyPath: m_Speed
-      value: 15
+    - target: {fileID: 5951881503709194724, guid: 78e435237389f564b9c9778c5240b64d, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951881503709194724, guid: 78e435237389f564b9c9778c5240b64d, type: 3}
+      propertyPath: health
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5951881503709194726, guid: 78e435237389f564b9c9778c5240b64d, type: 3}
       propertyPath: m_RootOrder
