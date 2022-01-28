@@ -8,6 +8,7 @@ public class VagueManagerScript : MonoBehaviour
     //Public
     [Header("Values")]
     public int NbVagueFinale = 5;
+    public float TimeBetweenWave;
     
     [Header("Drag'n Drop")]
     public Transform ListSpawnEnnemis;
@@ -17,38 +18,46 @@ public class VagueManagerScript : MonoBehaviour
     public GameObject EnnA;
     public GameObject EnnB;
 
-    public float TimeBetweenWave;
+    public GameObject PanelStart;
     
     //Private
     public int _nbVague = 0;
     private float _btWaveTimer = 0;
-    
-    void Start()
-    {
-        _btWaveTimer = TimeBetweenWave;
-        
-        NewVague();
-    }
-    
+    private bool _partyStart = false;
+
     void Update()
     {
-        if (CheckTimer()) Defaite();
-        if (CheckPlayerAlive()) Defaite();
-        if (CheckEnnemiAlive())
+        if(CheckPlayerAlive() && !_partyStart)
         {
-            if (_nbVague >= NbVagueFinale) Victoire();
-            else
+            return;
+        }
+        else if(_partyStart)
+        {
+            if (CheckTimer()) Defaite();
+            if (CheckPlayerAlive()) Defaite();
+            if (CheckEnnemiAlive())
             {
-                gameObject.GetComponent<CountDownTimer>().TimerPause();
-                if (_btWaveTimer <= 0)
+                if (_nbVague >= NbVagueFinale) Victoire();
+                else
                 {
-                    NewVague();
-                    _btWaveTimer = TimeBetweenWave;
+                    gameObject.GetComponent<CountDownTimer>().TimerPause();
+                    if (_btWaveTimer <= 0)
+                    {
+                        NewVague();
+                        _btWaveTimer = TimeBetweenWave;
+                    }
+                    else _btWaveTimer -= Time.deltaTime;
                 }
-                else _btWaveTimer -= Time.deltaTime;
-
-                Debug.Log(_btWaveTimer);
             }
+        }
+        else
+        {
+            _btWaveTimer = TimeBetweenWave;
+        
+            NewVague();
+            gameObject.GetComponent<CountDownTimer>().RestartTimer();
+            PanelStart.SetActive(false);
+            _partyStart = true;
         }
     }
 
@@ -61,20 +70,18 @@ public class VagueManagerScript : MonoBehaviour
         EnnemisSpawn();
         
         gameObject.GetComponent<CountDownTimer>().RestartTimer();
-
-        //reactivate objects spawn
     }
 
     //Lance la victoire si toutes les manches sont réussie
     private void Victoire()
     {
-        //SceneManager.LoadSceneAsync("Victoire");
+        SceneManager.LoadSceneAsync("Victoire");
     }
 
     //Lance la défaite si tous les joueurs meurs ou si le timer est finit
     private void Defaite()
     {
-        //SceneManager.LoadSceneAsync("defaite");
+        SceneManager.LoadSceneAsync("defaite");
     }
 
     //Fait apparaitre les ennemis au début d'une manche
