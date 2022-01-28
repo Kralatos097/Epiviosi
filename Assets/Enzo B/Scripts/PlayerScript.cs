@@ -54,10 +54,12 @@ public abstract class PlayerScript : MonoBehaviour
         {
             ActivateSpecial(true);
             Timer = coolDown;
+            fillCooldown.gameObject.SetActive(false);
         }
+        else fillCooldown.gameObject.SetActive(true);
         Move(Movement, speed);
         fillCooldown.fillAmount =  1 - Timer / coolDown;
-        CooldownText.text = ((int)(coolDown - Timer)).ToString();
+        CooldownText.text = ((int)(coolDown - Timer + 1)).ToString();
 
         AnimatorPlayer.SetFloat("movement", Movement.magnitude);
     }
@@ -96,5 +98,6 @@ public abstract class PlayerScript : MonoBehaviour
     public void ActivateSpecial(bool newState)
     {
         SpecialActive = newState;
+        Timer = newState ? coolDown : 0f;
     }
 }
