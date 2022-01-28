@@ -2562,7 +2562,7 @@ MonoBehaviour:
   changePlayerFactor: 1.5
   attackRange: 2
   attackBuffer: 4
-  health: 2
+  health: 3
   cursed: 0
   Animator: {fileID: 184210220422796251}
 --- !u!195 &5951881503709194725
