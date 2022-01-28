@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4624d00a-3574-4aef-af4f-6aea0869e2ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Athéna.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Athéna.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Ennemies.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Ennemies.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo B/Prefab/EnnemiesAvancé.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo B/Prefab/EnnemiesAvancé.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Hadès.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Hadès.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Poseidon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Poseidon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Zeus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enzo B/Prefab/Zeus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/Objets.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/Objets.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsCoeur.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsCoeur.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsEpee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsEpee.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsFleche.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsFleche.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsPlume.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsPlume.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsSablier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Prefab/ObjetsSablier.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scenes/AreneScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scenes/AreneScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_MainProject/Scripts/ObjetsScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MainProject/Scripts/ObjetsScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="4624d00a-3574-4aef-af4f-6aea0869e2ce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,24 +22,25 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Athena.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/LoseVictory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/TyphoonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Poseidon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurControlleur.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/LifeSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/EnnemiesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/AttackZone.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SkullBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/Lifesysteme.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SwitchPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Hades.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/TyphoonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/PlayeurControlleur.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SwitchPlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/EnnemiesBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/LoseVictory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Plugins/PlayerInput/PlayerInputManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Zeus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/LifeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/Lifesysteme.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/ShieldBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo D/Scripts/HealBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Poseidon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/SkullBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Athena.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/AttackZone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enzo B/Scripts/Zeus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/88f69663e9a64d00b2091dd8dfd4d38f13b800/91/1daf0110/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="248e1egIv2OR5hl6qd1AExmwNjk" />
   <component name="ProjectViewState">
@@ -81,7 +64,7 @@
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../BuildEpiviosi\Epiviosi.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/BuildEpiviosi\Epiviosi.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\thibaud.chevillard\Desktop\BuildEpiviosi" />
       <option name="PASS_PARENT_ENVS" value="1" />
