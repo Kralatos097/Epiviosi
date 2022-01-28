@@ -65,6 +65,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeImage: {fileID: 0}
   timeText: {fileID: 0}
-  duration: 120
+  duration: 60
   currenTime: 0
   TimerEnded: 0

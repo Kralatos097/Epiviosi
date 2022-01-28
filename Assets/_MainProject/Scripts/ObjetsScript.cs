@@ -27,8 +27,6 @@ public abstract class ObjetsScript : MonoBehaviour
 
     private void DespawnObject()
     {
-        //Object Spawn Count -1 dans le fichier ItemSpawner
-            
         DeactivateCollider();
         DeactivateSprite();
     }
