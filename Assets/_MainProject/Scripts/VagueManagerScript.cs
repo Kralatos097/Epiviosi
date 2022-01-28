@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class VagueManagerScript : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class VagueManagerScript : MonoBehaviour
     public GameObject EnnB;
 
     public GameObject PanelStart;
+    public Text NbMancheText;
     
     //Private
     public int _nbVague = 0;
@@ -41,6 +43,7 @@ public class VagueManagerScript : MonoBehaviour
                 else
                 {
                     gameObject.GetComponent<CountDownTimer>().TimerPause();
+                    ItemsSpawner.InWave = false;
                     if (_btWaveTimer <= 0)
                     {
                         NewVague();
@@ -56,6 +59,7 @@ public class VagueManagerScript : MonoBehaviour
         
             NewVague();
             gameObject.GetComponent<CountDownTimer>().RestartTimer();
+            ItemsSpawner.InWave = true;
             PanelStart.SetActive(false);
             _partyStart = true;
         }
@@ -65,6 +69,7 @@ public class VagueManagerScript : MonoBehaviour
     private void NewVague()
     {
         _nbVague++;
+        NbMancheText.text = _nbVague.ToString();
                 
         PlayerFullHeal();
         EnnemisSpawn();
@@ -87,8 +92,8 @@ public class VagueManagerScript : MonoBehaviour
     //Fait apparaitre les ennemis au début d'une manche
     private void EnnemisSpawn()
     {
-        int nbEnnemisB = Mathf.FloorToInt(Mathf.Pow(_nbVague-1, 1.5f) +4);
-        int nbEnnemisA = Mathf.FloorToInt(Mathf.Pow(nbEnnemisB/5,1.1f));
+        int nbEnnemisB = Mathf.FloorToInt(Mathf.Pow(_nbVague-1, 2f) +6);
+        int nbEnnemisA = Mathf.FloorToInt(Mathf.Pow(nbEnnemisB/5,1.3f));
 
         for (int i = 0; i < nbEnnemisB; i++)
         {

@@ -13,6 +13,9 @@ public class ObjetPlumeScript : ObjetsScript
     protected override void UseItem(Collider other)
     {
         _collider = other;
+        if (_collider.GetComponent<PlayerScript>().isPlumeActive) return;
+
+        _collider.GetComponent<PlayerScript>().isPlumeActive = true;
         _collider.GetComponent<PlayerScript>().speed *= SpeedMult;
 
         Invoke("SpeedToNormal", BuffTime);
@@ -21,6 +24,7 @@ public class ObjetPlumeScript : ObjetsScript
     private void SpeedToNormal()
     {
         _collider.GetComponent<PlayerScript>().speed /= SpeedMult;
+        _collider.GetComponent<PlayerScript>().isPlumeActive = false;
         DestroyObject();
     }
 }

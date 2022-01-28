@@ -9,7 +9,7 @@ public class ItemsSpawner : MonoBehaviour
     public GameObject[] Items = new GameObject[5];
     public List<GameObject> SpawnedItems = new List<GameObject>();
 
-    public bool InWave = true;
+    public static bool InWave = false;
 
     public int MaxItemOnTerrain;
     public float TimeBeforeSpawn;
@@ -18,7 +18,7 @@ public class ItemsSpawner : MonoBehaviour
 
     private bool isSpawning = false;
 
-    /*private void Start()
+    private void StartCouroutine()
     {
         StartCoroutine(SpawnItems());
     }
@@ -27,9 +27,12 @@ public class ItemsSpawner : MonoBehaviour
     {
         if (InWave && !isSpawning)
         {
-            Invoke("start", 1f);
+            Debug.Log("dddddddd");
+            
+            isSpawning = true;
+            Invoke("StartCouroutine", 1f);
         }
-    }*/
+    }
 
     IEnumerator SpawnItems()
     {
