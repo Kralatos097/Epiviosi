@@ -930,7 +930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2648889752968144636}
   maxHp: 5
-  speed: 2
+  speed: 2.7
   coolDown: 1
   ShieldActive: 0
   BuffActive: 0

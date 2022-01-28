@@ -106,11 +106,12 @@ public class EnnemiesBehaviour : MonoBehaviour
 
     public void GetHurt(int healthLost)
     {
+        if (cursed)
+            Destroy(transform.GetChild(0).gameObject);
         Life.LossLife(cursed ? healthLost * 2 : healthLost);
+        cursed = false;
         if (Life.isDead)
             Destroy(gameObject);
-        if (cursed)
-            Destroy(transform.GetChild(0));
     }
 
     private void OnDestroy()

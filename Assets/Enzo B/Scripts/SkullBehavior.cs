@@ -15,9 +15,4 @@ public class SkullBehavior : MonoBehaviour
     {
         transform.rotation = Quaternion.identity;
     }
-
-    private void OnDestroy()
-    {
-        transform.GetComponentInParent<EnnemiesBehaviour>().cursed = false;
-    }
 }
