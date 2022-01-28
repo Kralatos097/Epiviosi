@@ -17,6 +17,7 @@ public class EnnemiesBehaviour : MonoBehaviour
     public int health = 2;
     public LifeSystem Life = new LifeSystem();
     public bool cursed = false;
+    public Animator Animator;
 
     private void Awake()
     {
@@ -24,7 +25,6 @@ public class EnnemiesBehaviour : MonoBehaviour
         if (agent == null) agent = GetComponent<NavMeshAgent>();
         EnnemiesList.Add(this);
         agent.speed = speed;
-        
     }
 
     // Update is called once per frame
@@ -76,12 +76,16 @@ public class EnnemiesBehaviour : MonoBehaviour
         if (!_playerAimed) return;
 
         if (Vector3.Distance(_playerAimed.transform.position, transform.position) >= attackRange)
+        {
             agent.destination = _playerAimed.transform.position;
+            Animator.SetBool("isMoving", true);
+        }
         else
         {
             agent.destination = transform.position;
             transform.forward = _playerAimed.transform.position - transform.position;
             transform.forward = new Vector3(transform.forward.x, 0f, transform.forward.z);
+            Animator.SetBool("isMoving", false);
             AttackPlayer(_playerAimed);
         }
     }
@@ -90,6 +94,7 @@ public class EnnemiesBehaviour : MonoBehaviour
     {
         if (_attackCooldown >= attackBuffer)
         {
+            Animator.SetTrigger("attack");
             //Verifie si le personnage a un shield
             if (player.GetComponent<PlayerScript>().ShieldActive)
             {
