@@ -18,6 +18,8 @@ public class EnnemiesBehaviour : MonoBehaviour
     public LifeSystem Life = new LifeSystem();
     public bool cursed = false;
     public Animator Animator;
+    float clickTimer = 0f;
+    private bool isClicking;
 
     private void Awake()
     {
@@ -25,6 +27,7 @@ public class EnnemiesBehaviour : MonoBehaviour
         if (agent == null) agent = GetComponent<NavMeshAgent>();
         EnnemiesList.Add(this);
         agent.speed = speed;
+        GetComponent<MeshRenderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -32,6 +35,8 @@ public class EnnemiesBehaviour : MonoBehaviour
     {
         _attackCooldown += Time.deltaTime;
 
+        if (isClicking) clickTimer += Time.deltaTime;
+        if (clickTimer >= 0.4f) GetComponent<MeshRenderer>().enabled = false;
         float distance = float.MaxValue;
         if (_playerAimed != null)
         {
@@ -115,6 +120,8 @@ public class EnnemiesBehaviour : MonoBehaviour
         if (cursed)
             Destroy(transform.GetChild(0).gameObject);
         Life.LossLife(cursed ? healthLost * 2 : healthLost);
+        GetComponent<MeshRenderer>().enabled = true;
+        isClicking = true;
         cursed = false;
         if (Life.isDead)
             Destroy(gameObject);
