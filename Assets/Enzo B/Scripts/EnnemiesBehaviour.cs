@@ -45,6 +45,7 @@ public class EnnemiesBehaviour : MonoBehaviour
         
         foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
         {
+            if (player.GetComponent<PlayerScript>().Life.isDead) return;
             NavMeshPath path = new NavMeshPath();
             float newPlayerDistance = 0f;
             agent.CalculatePath(player.transform.position, path);
