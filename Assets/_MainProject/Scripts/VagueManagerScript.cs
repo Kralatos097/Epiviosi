@@ -21,6 +21,9 @@ public class VagueManagerScript : MonoBehaviour
 
     public GameObject PanelStart;
     public Text NbMancheText;
+
+    public Text TimerGO;
+    public Image TimerGOImg;
     
     //Private
     public int _nbVague = 0;
@@ -50,6 +53,9 @@ public class VagueManagerScript : MonoBehaviour
                         _btWaveTimer = TimeBetweenWave;
                     }
                     else _btWaveTimer -= Time.deltaTime;
+
+                    TimerGO.text = ((int)_btWaveTimer+1).ToString();
+                    TimerGOImg.fillAmount = _btWaveTimer/TimeBetweenWave;
                 }
             }
         }

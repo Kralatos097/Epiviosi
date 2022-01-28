@@ -27,8 +27,6 @@ public class ItemsSpawner : MonoBehaviour
     {
         if (InWave && !isSpawning)
         {
-            Debug.Log("dddddddd");
-            
             isSpawning = true;
             Invoke("StartCouroutine", 1f);
         }

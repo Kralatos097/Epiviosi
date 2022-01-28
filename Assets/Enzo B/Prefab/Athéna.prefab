@@ -166,7 +166,7 @@ MonoBehaviour:
   controller: {fileID: 5274924816840289580}
   maxHp: 3
   speed: 3
-  coolDown: 10
+  coolDown: 30
   ShieldActive: 0
   BuffActive: 0
   AttackZone: {fileID: 5750840704946958892}
@@ -175,6 +175,7 @@ MonoBehaviour:
   CooldownText: {fileID: 0}
   AnimatorPlayer: {fileID: 8157537507409991929}
   lifeImage: {fileID: 0}
+  isPlumeActive: 0
   shieldPrefab: {fileID: 8516058633305801313, guid: 3267f70bd7e66cd45ac7f556038a6794, type: 3}
   shieldRange: 10
 --- !u!114 &5274924816840289578

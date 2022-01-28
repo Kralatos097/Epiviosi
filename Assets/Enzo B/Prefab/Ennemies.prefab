@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
-  speed: 2
+  speed: 7.5
   changePlayerFactor: 1.5
   attackRange: 2
   attackBuffer: 4
