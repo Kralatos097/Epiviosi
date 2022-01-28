@@ -881,7 +881,7 @@ PrefabInstance:
     - target: {fileID: 8764094791223927400, guid: 9548b0266a3c6ec449bd9b66339a46f4, type: 3}
       propertyPath: playerPrefabList.Array.data[0]
       value: 
-      objectReference: {fileID: 2648889752968144627, guid: 1cde8a6b68c77514ea38eb793f447111, type: 3}
+      objectReference: {fileID: 5357814750509228706, guid: 48c8b7818c61c194d8113cc2be21e328, type: 3}
     - target: {fileID: 8764094791223927400, guid: 9548b0266a3c6ec449bd9b66339a46f4, type: 3}
       propertyPath: playerPrefabList.Array.data[1]
       value: 
@@ -893,7 +893,7 @@ PrefabInstance:
     - target: {fileID: 8764094791223927400, guid: 9548b0266a3c6ec449bd9b66339a46f4, type: 3}
       propertyPath: playerPrefabList.Array.data[3]
       value: 
-      objectReference: {fileID: 5357814750509228706, guid: 48c8b7818c61c194d8113cc2be21e328, type: 3}
+      objectReference: {fileID: 2648889752968144627, guid: 1cde8a6b68c77514ea38eb793f447111, type: 3}
     - target: {fileID: 8764094791223927405, guid: 9548b0266a3c6ec449bd9b66339a46f4, type: 3}
       propertyPath: m_Name
       value: Characters

@@ -24,12 +24,21 @@ public abstract class PlayerScript : MonoBehaviour
     public Image fillCooldown;
     public Text CooldownText;
     public Animator AnimatorPlayer;
+    public Image lifeImage;
 
     private void Awake()
     {
         PlayerList.Add(this);
         Life.InitialiseLife(maxHp);
         GameObject UIGo = GameObject.Find(UIParentName);
+        for (int index = 0; index < UIGo.transform.childCount; index++)
+        {
+            if (index == 1)
+            {
+                lifeImage = UIGo.transform.GetChild(index).GetComponent<Image>();
+                break;
+            }
+        }
         CooldownText = UIGo.GetComponentInChildren<Text>();
         fillCooldown = CooldownText.transform.GetComponentInParent<Image>();
         fillCooldown.type = Image.Type.Filled;
@@ -38,16 +47,18 @@ public abstract class PlayerScript : MonoBehaviour
     
     void Update()
     {
+        lifeImage.fillAmount = (float)((float)Life.currentHp / (float)Life.maxHp);
         if (Life.isDead) return;
         Timer += Time.deltaTime;
         if (Timer >= coolDown)
         {
             ActivateSpecial(true);
+            Timer = coolDown;
         }
         Move(Movement, speed);
         fillCooldown.fillAmount =  1 - Timer / coolDown;
         CooldownText.text = ((int)(coolDown - Timer)).ToString();
-        
+
         AnimatorPlayer.SetFloat("movement", Movement.magnitude);
     }
 
