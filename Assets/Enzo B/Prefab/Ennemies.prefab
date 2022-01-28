@@ -2497,7 +2497,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5951881503709194722}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2509,7 +2509,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 95c35892014a69745a222b5b8a9909d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2565,6 +2565,9 @@ MonoBehaviour:
   health: 3
   cursed: 0
   Animator: {fileID: 184210220422796251}
+  hurtMaterial: {fileID: 2100000, guid: 95c35892014a69745a222b5b8a9909d3, type: 2}
+  baseMaterial: {fileID: 0}
+  baseMeshGo: {fileID: 2238775533668314465}
 --- !u!195 &5951881503709194725
 NavMeshAgent:
   m_ObjectHideFlags: 0
