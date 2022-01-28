@@ -26,6 +26,8 @@ public abstract class PlayerScript : MonoBehaviour
     public Animator AnimatorPlayer;
     public Image lifeImage;
 
+    public bool isPlumeActive = false;
+
     private void Awake()
     {
         PlayerList.Add(this);

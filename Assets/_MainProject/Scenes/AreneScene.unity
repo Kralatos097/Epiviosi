@@ -147,6 +147,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1876279861}
     - target: {fileID: 8393748929802516306, guid: 46dcd2c171f283d4d9940a9570169b1a, type: 3}
+      propertyPath: NbMancheText
+      value: 
+      objectReference: {fileID: 1210927571}
+    - target: {fileID: 8393748929802516306, guid: 46dcd2c171f283d4d9940a9570169b1a, type: 3}
       propertyPath: EnnemisParent
       value: 
       objectReference: {fileID: 1006965035}
@@ -156,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 2797759237157548633}
     - target: {fileID: 8393748929802516307, guid: 46dcd2c171f283d4d9940a9570169b1a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8393748929802516307, guid: 46dcd2c171f283d4d9940a9570169b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -412,7 +416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8162837182374742743, guid: 1b133576732047c4e90be30019c31cf5, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8162837182374742743, guid: 1b133576732047c4e90be30019c31cf5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -476,82 +480,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b133576732047c4e90be30019c31cf5, type: 3}
---- !u!1 &995831459
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 995831462}
-  - component: {fileID: 995831461}
-  - component: {fileID: 995831460}
-  m_Layer: 0
-  m_Name: Terrain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
---- !u!154 &995831460
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995831459}
-  m_Material: {fileID: 0}
-  m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 0db63864de0cdb84c82076bced173121, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &995831461
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995831459}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 0db63864de0cdb84c82076bced173121, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
---- !u!4 &995831462
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995831459}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -487.2, y: 0, z: -505.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1006965034
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,8 +508,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1210927571 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3561135102360235743, guid: 6b9c649b57fa9cd4f97911ae3a992fe9, type: 3}
+  m_PrefabInstance: {fileID: 1285099202}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1285099202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -672,6 +611,10 @@ PrefabInstance:
     - target: {fileID: 3561135102341224385, guid: 6b9c649b57fa9cd4f97911ae3a992fe9, type: 3}
       propertyPath: m_FillAmount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3561135102360235743, guid: 6b9c649b57fa9cd4f97911ae3a992fe9, type: 3}
+      propertyPath: m_Text
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3561135102482135528, guid: 6b9c649b57fa9cd4f97911ae3a992fe9, type: 3}
       propertyPath: m_LocalScale.x
@@ -1138,7 +1081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6712134006360098104, guid: 74148026c18945542ba19216df66aa2e, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6712134006360098104, guid: 74148026c18945542ba19216df66aa2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1278,7 +1221,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2108687196
 PrefabInstance:
@@ -1293,7 +1236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8764094791223927406, guid: 9548b0266a3c6ec449bd9b66339a46f4, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8764094791223927406, guid: 9548b0266a3c6ec449bd9b66339a46f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1619,5 +1562,5 @@ Transform:
   - {fileID: 2797759236275921467}
   - {fileID: 2797759235548222553}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
