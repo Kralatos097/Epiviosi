@@ -96,5 +96,6 @@ public abstract class PlayerScript : MonoBehaviour
     public void ActivateSpecial(bool newState)
     {
         SpecialActive = newState;
+        Timer = newState ? coolDown : 0f;
     }
 }
