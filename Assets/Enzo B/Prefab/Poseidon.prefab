@@ -899,7 +899,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 455ab0cbcfd8eff47b056218c01db4ac, type: 3}
+  - {fileID: 2100000, guid: 725ca2ff48b688b4caeb08da8efe3cf2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1503,7 +1503,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 455ab0cbcfd8eff47b056218c01db4ac, type: 3}
+  - {fileID: 2100000, guid: 725ca2ff48b688b4caeb08da8efe3cf2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1766,7 +1766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4704703885030000132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -5, y: 0.5, z: -30}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1297618317868379224}
@@ -1861,6 +1861,7 @@ MonoBehaviour:
   CooldownText: {fileID: 0}
   AnimatorPlayer: {fileID: 392581701829006831}
   lifeImage: {fileID: 0}
+  isPlumeActive: 0
   typhoonPrefab: {fileID: 8405339698793381188, guid: ccd80c5cc13ef0041a043f08487f8dbd, type: 3}
 --- !u!143 &4704703885030000191
 CharacterController:

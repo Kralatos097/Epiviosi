@@ -215,6 +215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5274924816840289568}
     m_Modifications:
+    - target: {fileID: 3742818255424422974, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ece1b4b25b5d4e2458dd2473df2c7786, type: 2}
     - target: {fileID: 4674881609261629111, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
       propertyPath: m_Name
       value: Zeus_Attack
@@ -275,6 +279,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6722651250150048130, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ece1b4b25b5d4e2458dd2473df2c7786, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
 --- !u!4 &8556800093411057816 stripped
