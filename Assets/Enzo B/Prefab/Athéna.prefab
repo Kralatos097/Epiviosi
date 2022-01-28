@@ -109,6 +109,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3261991952109543109}
+  - {fileID: 8556800093411057816}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -127,7 +128,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5274924816840289571}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -172,8 +173,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!143 &5274924816840289580
 CharacterController:
   m_ObjectHideFlags: 0
@@ -185,13 +186,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1
+  m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &5274924816840289570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,10 +211,11 @@ MonoBehaviour:
   coolDown: 10
   ShieldActive: 0
   BuffActive: 0
-  AttackZone: {fileID: 0}
+  AttackZone: {fileID: 5750840704946958892}
   UIParentName: Player3Athena
   fillCooldown: {fileID: 0}
   CooldownText: {fileID: 0}
+  AnimatorPlayer: {fileID: 8157537507409991929}
   shieldPrefab: {fileID: 8516058633305801313, guid: 3267f70bd7e66cd45ac7f556038a6794, type: 3}
   shieldRange: 10
 --- !u!114 &5274924816840289578
@@ -246,3 +248,82 @@ MonoBehaviour:
   m_DefaultActionMap: "Ar\xE8ne"
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1001 &4401293350963004565
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5274924816840289568}
+    m_Modifications:
+    - target: {fileID: 4674881609261629111, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_Name
+      value: Zeus_Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+--- !u!4 &8556800093411057816 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5452544831001453581, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+  m_PrefabInstance: {fileID: 4401293350963004565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8157537507409991929 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5485927366023273580, guid: d264ede2d77679742bcbe5580f9ace0c, type: 3}
+  m_PrefabInstance: {fileID: 4401293350963004565}
+  m_PrefabAsset: {fileID: 0}

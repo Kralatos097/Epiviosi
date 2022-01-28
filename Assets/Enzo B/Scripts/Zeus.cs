@@ -19,5 +19,6 @@ public class Zeus : PlayerScript
         Instantiate(thunderPrefab,  transform.position + (transform.forward * 10), Quaternion.identity);
         ActivateSpecial(false);
         Timer = 0f;
+        AnimatorPlayer.SetTrigger("ulti");
     }
 }
